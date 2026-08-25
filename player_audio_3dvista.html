@@ -201,11 +201,28 @@
     audio.currentTime = Math.max(0, audio.currentTime - 10);
   });
 
-  audio.addEventListener('loadedmetadata', () => {
-    duration.textContent = fmt(audio.duration);
-    seek.max = Number.isFinite(audio.duration) ? audio.duration : 0;
-    updateProgressStyle();
-  });
+  function syncDuration() {
+    let total = audio.duration;
+
+    // In alcuni WebFrame il metadata può essere già disponibile prima
+    // che l'evento loadedmetadata venga intercettato. Come fallback,
+    // usa anche l'estremo dell'intervallo seekable quando disponibile.
+    if ((!Number.isFinite(total) || total <= 0) && audio.seekable.length) {
+      const seekableEnd = audio.seekable.end(audio.seekable.length - 1);
+      if (Number.isFinite(seekableEnd) && seekableEnd > 0) total = seekableEnd;
+    }
+
+    if (Number.isFinite(total) && total > 0) {
+      duration.textContent = fmt(total);
+      seek.max = total;
+      updateProgressStyle();
+    }
+  }
+
+  audio.addEventListener('loadedmetadata', syncDuration);
+  audio.addEventListener('durationchange', syncDuration);
+  audio.addEventListener('loadeddata', syncDuration);
+  audio.addEventListener('canplay', syncDuration);
 
   audio.addEventListener('timeupdate', () => {
     if (!seek.matches(':active')) seek.value = audio.currentTime || 0;
@@ -223,6 +240,8 @@
   audio.addEventListener('pause', syncButton);
   audio.addEventListener('ended', syncButton);
 
+  // Aggiorna subito la durata se il browser/WebFrame ha già caricato i metadata.
+  syncDuration();
   updateProgressStyle();
 })();
 </script>
