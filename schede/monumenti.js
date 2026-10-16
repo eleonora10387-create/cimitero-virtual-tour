@@ -52,7 +52,7 @@ window.MONUMENTI = {
     },
     bibliografia: [], // Da riempire senza inventare citazioni
     dati: [], // Collegamento alla struttura scientifica in fase successiva
-    modello3dUrl: "" // L'azione 3D nativa di 3DVista si integra in una fase successiva
+    modello3dUrl: "modelli/bonfatti-casini-web.glb" // Copia web ottimizzata; originale conservato separatamente
   },
   "DEMO-RUS": {
     id: "DEMO-RUS",

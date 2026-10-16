@@ -284,20 +284,85 @@
   }
   $('tool-biblio').addEventListener('click', () => showDetails('bibliografia'));
   $('tool-data').addEventListener('click', () => showDetails('dati'));
-  $('tool-3d').addEventListener('click', () => {
-    const url = current().modello3dUrl;
-    if (url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-      return;
+  // Il visualizzatore Google <model-viewer> viene caricato SOLO al primo clic.
+  // La libreria è referenziata con una versione fissata per evitare cambi imprevisti.
+  let viewerLibraryPromise = null;
+  function ensureModelViewerLibrary() {
+    if (customElements.get('model-viewer')) return Promise.resolve();
+    if (!viewerLibraryPromise) {
+      viewerLibraryPromise = new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js';
+        script.onload = () => customElements.whenDefined('model-viewer').then(resolve);
+        script.onerror = () => reject(new Error('Libreria 3D non disponibile. Verifica la connessione Internet.'));
+        document.head.appendChild(script);
+      }).catch(error => { viewerLibraryPromise = null; throw error; });
     }
-    // In attesa del collegamento con il visualizzatore 3D nativo di 3DVista:
-    // il pulsante risponde al clic e spiega cosa manca, senza simulare l'apertura del modello.
-    $('details-title').textContent = 'Modello 3D';
-    $('details-body').replaceChildren(makeEl('p', 'missing',
-      'Il pulsante è pronto. Il collegamento al modello 3D all’interno di 3DVista deve ancora essere configurato.'));
-    const dialog = $('details-dialog');
+    return viewerLibraryPromise;
+  }
+  function showDialog(dialog) {
     if (typeof dialog.showModal === 'function') dialog.showModal();
     else dialog.setAttribute('open', '');
+  }
+  let modelGeneration = 0;
+  async function openModelViewer() {
+    const url = current().modello3dUrl;
+    if (!url) {
+      $('details-title').textContent = 'Modello 3D';
+      $('details-body').replaceChildren(makeEl('p', 'missing',
+        'Il modello 3D non è ancora disponibile per questo monumento.'));
+      showDialog($('details-dialog'));
+      return;
+    }
+    const dialog = $('model-dialog');
+    const viewport = $('model-viewport');
+    const status = $('model-status');
+    const generation = ++modelGeneration;
+    viewport.querySelectorAll('model-viewer').forEach(el => el.remove());
+    $('model-dialog-title').textContent = 'Modello 3D';
+    $('model-dialog-subtitle').textContent = current().nome;
+    status.hidden = false;
+    status.textContent = 'Caricamento del visualizzatore…';
+    showDialog(dialog);
+    try {
+      await ensureModelViewerLibrary();
+      if (generation !== modelGeneration || !dialog.open) return;
+      const model = document.createElement('model-viewer');
+      model.setAttribute('src', url);
+      model.setAttribute('alt', `Modello tridimensionale di ${current().nome}`);
+      model.setAttribute('camera-controls', '');
+      model.setAttribute('touch-action', 'pan-y');
+      model.setAttribute('loading', 'eager');
+      model.setAttribute('interaction-prompt', 'auto');
+      model.setAttribute('shadow-intensity', '0.3');
+      model.addEventListener('load', () => {
+        if (generation === modelGeneration) status.hidden = true;
+      });
+      model.addEventListener('error', () => {
+        if (generation === modelGeneration) {
+          status.hidden = false;
+          status.textContent = 'Il modello non si è caricato. Verifica che il file GLB sia pubblicato nella cartella modelli.';
+        }
+      });
+      viewport.appendChild(model);
+      status.textContent = 'Caricamento del modello…';
+    } catch (error) {
+      if (generation === modelGeneration) {
+        status.hidden = false;
+        status.textContent = error.message || 'Impossibile caricare il visualizzatore 3D.';
+      }
+    }
+  }
+  $('tool-3d').addEventListener('click', openModelViewer);
+  $('model-dialog-close').addEventListener('click', () => $('model-dialog').close());
+  $('model-dialog').addEventListener('click', event => {
+    if (event.target === $('model-dialog')) $('model-dialog').close();
+  });
+  $('model-dialog').addEventListener('close', () => {
+    // La rimozione del componente interrompe la visualizzazione 3D e libera le risorse.
+    modelGeneration++;
+    $('model-viewport').querySelectorAll('model-viewer').forEach(el => el.remove());
   });
   $('dialog-close').addEventListener('click', () => $('details-dialog').close());
   $('details-dialog').addEventListener('click', event => {

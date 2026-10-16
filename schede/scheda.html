@@ -135,6 +135,22 @@
     <div class="dialog-head"><h2 id="details-title"></h2><button type="button" id="dialog-close" aria-label="Chiudi">×</button></div>
     <div id="details-body" class="details-body"></div>
   </dialog>
+
+  <!-- Visualizzatore 3D web: il modello è caricato solo quando viene aperto.
+       Lo stesso pannello funziona sia nella scheda desktop sia in quella mobile. -->
+  <dialog id="model-dialog" class="model-dialog" aria-labelledby="model-dialog-title">
+    <header class="model-dialog-header">
+      <div>
+        <h2 id="model-dialog-title">Modello 3D</h2>
+        <p class="model-dialog-subtitle" id="model-dialog-subtitle"></p>
+      </div>
+      <button type="button" id="model-dialog-close" class="model-dialog-close" aria-label="Chiudi modello 3D">×</button>
+    </header>
+    <div id="model-viewport" class="model-viewport">
+      <p id="model-status" class="model-status" role="status">Caricamento del visualizzatore…</p>
+    </div>
+    <footer class="model-dialog-help">Trascina per ruotare · Scorri o usa due dita per ingrandire</footer>
+  </dialog>
   <script src="monumenti.js"></script>
   <script src="scheda.js"></script>
 </body>
