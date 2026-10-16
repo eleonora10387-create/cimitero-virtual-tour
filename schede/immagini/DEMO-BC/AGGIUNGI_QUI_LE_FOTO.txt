@@ -1,0 +1,5 @@
+Inserisci qui le immagini originali della Bonfatti–Casini.
+Esempi: disegno_1894.jpg, vista_frontale.jpg, cripta.jpg.
+Per mostrare le immagini nella galleria devi inserirle anche
+nell'elenco fotografie di monumenti.js, indicando il nome file esatto.
+Non pubblicare immagini con diritti o permessi non verificati.

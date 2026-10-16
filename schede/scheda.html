@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Edicola Bonfatti–Casini · Cimitero Monumentale di Perugia</title>
+  <meta name="description" content="Scheda documentaria del Cimitero Monumentale di Perugia, Memory Twin.">
+  <!-- CINZEL MEDIUM, Google Fonts. Non è necessario caricarne il file su GitHub. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Adobe Garamond Pro (Regular, Italic, Bold, Bold Italic) da Adobe Fonts. -->
+  <link rel="preconnect" href="https://use.typekit.net">
+  <link rel="stylesheet" href="https://use.typekit.net/oew1wtx.css">
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <aside id="developer-switch" class="developer-switch" aria-label="Selettore di prova">
+    <span>Prototipo · contenuti in lavorazione</span>
+    <label>Monumento <select id="monument-select" aria-label="Scegli il monumento"></select></label>
+  </aside>
+
+  <main id="sheet" class="sheet">
+    <section class="left-panel" aria-label="Galleria e apparato simbolico">
+      <div class="gallery">
+        <div class="gallery-view" id="gallery-view" aria-live="polite"></div>
+        <button type="button" class="gallery-arrow gallery-prev" id="photo-prev" aria-label="Fotografia precedente" title="Fotografia precedente">&#10094;</button>
+        <button type="button" class="gallery-arrow gallery-next" id="photo-next" aria-label="Fotografia successiva" title="Fotografia successiva">&#10095;</button>
+      </div>
+      <p id="gallery-caption" class="gallery-caption"></p>
+      <div id="symbol-list" class="symbol-list"></div>
+      <div class="bottom-tools" aria-label="Risorse documentarie">
+        <button type="button" id="tool-3d" class="tool" aria-label="Apri modello 3D">
+          <img src="assets/logo_3d.png" alt=""><span>3D</span>
+        </button>
+        <button type="button" id="tool-biblio" class="tool" aria-label="Apri bibliografia">
+          <img src="assets/logo_bibliografia.png" alt=""><span>Bibliografia</span>
+        </button>
+        <button type="button" id="tool-data" class="tool" aria-label="Apri dati">
+          <img src="assets/logo_dati.png" alt=""><span>Dati</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="right-panel" aria-label="Descrizione del monumento">
+      <header class="monument-head">
+        <h1 id="title"></h1>
+        <p id="chronology" class="chronology"></p>
+        <p id="author" class="author"></p>
+      </header>
+      <div id="description" class="description"></div>
+      <div id="audio-area" class="audio-area">
+        <div class="audio-label"><img src="assets/logo_audio.png" alt=""><span>Ascolta</span></div>
+        <div class="audio-player">
+          <button id="audio-toggle" type="button" class="audio-toggle" aria-label="Avvia narrazione" aria-pressed="false">
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.5 4.5 20 12 7.5 19.5Z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5.5" y="4.5" width="4.5" height="15" rx=".5"/><rect x="14" y="4.5" width="4.5" height="15" rx=".5"/></svg>
+          </button>
+          <button id="audio-back" type="button" class="audio-back" aria-label="Indietro di dieci secondi">↶ <span>10</span></button>
+          <input id="audio-progress" type="range" min="0" max="1000" value="0" aria-label="Posizione audio">
+          <div class="audio-clock"><span id="audio-current">0:00</span> / <span id="audio-duration">—:——</span></div>
+          <audio id="audio-element" preload="metadata"></audio>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="details-dialog" class="details-dialog" aria-labelledby="details-title">
+    <div class="dialog-head"><h2 id="details-title"></h2><button type="button" id="dialog-close" aria-label="Chiudi">×</button></div>
+    <div id="details-body" class="details-body"></div>
+  </dialog>
+  <script src="monumenti.js"></script>
+  <script src="scheda.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+:root {
+  --paper: #ffffff;
+  --ink: #535353;
+  --icon: #575756;
+  --muted: #777777;
+  --wine: #8e284b;
+  --sans: #5c5c5c;
+  --font-body: "adobe-garamond-pro", "Adobe Garamond Pro", "Garamond", Georgia, "Times New Roman", serif;
+  --font-title: "Cinzel", "Times New Roman", serif;
+  --symbol-text-indent: 88px; /* 74px per icona + 14px di spazio */
+}
+* { box-sizing: border-box; }
+html { min-height:100%; scroll-behavior:smooth; }
+body { margin:0; min-height:100%; color:var(--ink); background:#efefef; font-family:var(--font-body); }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.developer-switch { max-width:1600px; margin: 14px auto; padding: 0 15px; display:flex; justify-content:space-between; align-items:center; gap:15px; color:#68625e; font:12px system-ui, sans-serif; }
+.developer-switch label { display:flex; align-items:center; gap:8px; }
+.developer-switch select { min-width:200px; border:1px solid #d0cccc; background:#fff; color:#3e3d3b; border-radius:3px; padding:7px; font:12px system-ui, sans-serif; }
+.sheet { width: min(1600px, calc(100% - 30px)); min-height: min(930px, calc(100vh - 80px)); height:auto; margin:0 auto 20px; display:grid; grid-template-columns: 49% 51%; align-items:stretch; background:var(--paper); box-shadow: 0 5px 20px rgba(30,30,30,.10); }
+.left-panel, .right-panel { min-width:0; min-height:0; overflow:visible; }
+.left-panel { display:flex; flex-direction:column; align-items:stretch; padding:30px 22px 20px 42px; gap:0; }
+/* I due bordi della galleria seguono precisamente quelli del testo dei simboli. */
+/* La cornice della galleria occupa ESATTAMENTE la colonna del testo simbolico:
+   bordo sinistro all'inizio del testo e bordo destro alla fine del testo.
+   Non restringerla con un ulteriore calc(): il margine sinistro riserva già
+   lo spazio necessario all'icona (74px + 14px). */
+.gallery { width:auto; margin-left:var(--symbol-text-indent); margin-right:0; aspect-ratio:4/3; height:auto; flex:none; align-self:stretch; position:relative; overflow:hidden; display:block; }
+/* La cornice interna e il segnaposto riempiono il riquadro senza spazi
+   bianchi accidentali a destra o in basso. Le foto mantengono object-fit: contain. */
+.gallery-view { position:absolute; inset:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+.gallery-view img { display:block; max-width:100%; max-height:100%; width:100%; height:100%; object-fit:contain; }
+.gallery-empty { color:#999; border:1px solid #e4e1df; background:#fbfaf9; width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:22px; gap:9px; font-size:16px; }
+.gallery-empty svg { width:45px; height:45px; stroke:#b8b4b0; }
+.gallery-empty em { font-size:13px; font-style:italic; color:#aaa; }
+.gallery-arrow { position:absolute; top:50%; transform:translateY(-50%); color:#a3a3a3; background:rgba(255,255,255,.86); border:0; padding:8px 12px; line-height:1; font-size:27px; }
+.gallery-arrow:hover { color:#656565; background:#fff; }
+.gallery-arrow:disabled { opacity:0; cursor:default; pointer-events:none; }
+.gallery-prev { left:3px; } .gallery-next { right:3px; }
+.gallery-caption { margin-left:var(--symbol-text-indent); text-align:center; color:#7b7b7b; font-size:13px; min-height:21px; margin:7px 0 24px; font-style:italic; }
+.symbol-list { flex:0 0 auto; min-height:0; overflow:visible; }
+.symbol-item { display:grid; grid-template-columns:74px minmax(0, 1fr); column-gap:14px; align-items:start; margin:15px 0 14px; }
+.symbol-icon { width:72px; height:72px; object-fit:contain; }
+.symbol-text { font-size:clamp(14px, 1.18vw, 18px); line-height:1.32; text-align:justify; }
+.symbol-text p { margin:0 0 .23em; }
+.bottom-tools { flex:0 0 auto; margin-top:auto; display:flex; justify-content:space-evenly; padding:26px 30px 7px; gap:20px; align-items:end; }
+.tool { min-width:90px; border:0; background:transparent; color:var(--icon); display:flex; flex-direction:column; align-items:center; gap:5px; padding:8px 6px 2px; font:500 clamp(12px,1.2vw,18px) var(--font-title); font-variant:small-caps; }
+.tool img { width:40px; height:40px; object-fit:contain; }
+.tool:not(:disabled):hover { color:var(--wine); transform:translateY(-2px); }
+.tool:focus-visible { outline:2px solid var(--wine); outline-offset:3px; border-radius:4px; }
+.tool:disabled { opacity:1; cursor:default; }
+.right-panel { display:flex; flex-direction:column; padding:23px 52px 24px 26px; }
+.monument-head { flex:0 0 auto; }
+.monument-head h1 { color:#686868; font:500 clamp(24px,2.25vw,35px)/1.18 var(--font-title); margin:0 0 7px; font-variant:small-caps; letter-spacing:.01em; }
+.chronology { font-size:clamp(17px,1.3vw,23px); margin:0 0 2px; line-height:1.2; }
+.author { font-size:clamp(15px,1.1vw,19px); margin:3px 0 17px; font-weight:bold; font-style:italic; }
+.description { overflow:visible; flex:0 0 auto; min-height:0; padding-right:0; font-size:clamp(14.5px,1.18vw,18.5px); line-height:1.28; text-align:justify; }
+.description p { margin:0 0 .27em; }
+.description strong, .symbol-text strong { color:#393939; font-weight:700; }
+.missing { font-style:italic; color:#9a9a9a; }
+.audio-area { margin-top:auto; display:flex; align-items:center; gap:24px; padding:32px 4px 6px; }
+.audio-label { display:flex; flex-direction:column; align-items:center; gap:4px; flex:0 0 72px; font:500 15px var(--font-title); color:var(--icon); text-transform:uppercase; }
+.audio-label img { width:39px; height:36px; object-fit:contain; }
+.audio-player { display:grid; grid-template-columns:auto auto minmax(70px,1fr); grid-template-rows:1fr auto; gap:0 10px; align-items:center; width:100%; padding-top:7px; }
+.audio-toggle, .audio-back { color:var(--icon); background:none; border:0; padding:2px; line-height:1; }
+/* Simboli del lettore disegnati con SVG: non ereditano Cinzel o Garamond. */
+.audio-toggle { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; padding:2px; }
+.audio-toggle svg { width:24px; height:24px; display:block; flex:none; fill:currentColor; }
+.audio-toggle .icon-pause { display:none; }
+.audio-toggle.is-playing .icon-play { display:none; }
+.audio-toggle.is-playing .icon-pause { display:block; }
+.audio-back { white-space:nowrap; font-size:18px; }.audio-back span { font-size:11px; }
+.audio-player input[type="range"] { accent-color:var(--icon); min-width:0; height:16px; cursor:pointer; }
+.audio-clock { grid-column:3; color:#aaa; justify-self:end; font-size:13px; padding-top:2px; }
+.audio-area.is-inactive { opacity:.48; }
+.details-dialog { border:1px solid #ddd; background:#fff; width:min(750px,calc(100vw - 40px)); max-height:82vh; color:var(--ink); padding:25px 28px; box-shadow:0 14px 70px rgba(0,0,0,.17); font-family:var(--font-body); }
+.details-dialog::backdrop { background:rgba(35,35,35,.33); }
+.dialog-head { display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid #e9e7e4; padding-bottom:9px; }
+.dialog-head h2 { margin:0; font:500 23px var(--font-title); }
+.dialog-head button { border:0; background:none; font:35px var(--font-body); color:#666; }
+.details-body { padding-top:12px; font-size:17px; line-height:1.5; }
+.details-body li { padding-bottom:9px; }
+body.embedded { background:transparent; }
+body.embedded .developer-switch { display:none; }
+body.embedded .sheet { width:100%; height:auto; min-height:100vh; margin:0; box-shadow:none; }
+@media (max-width:940px) {
+  .sheet { grid-template-columns:1fr; width:100%; margin:0; height:auto; min-height:0; }
+  body.embedded .sheet { height:auto; min-height:100vh; }
+  .left-panel, .right-panel { overflow:visible; }
+  .symbol-list, .description { overflow:visible; }
+  .right-panel { order:0; padding:28px 25px; }
+  .left-panel { order:1; padding:18px 25px 24px; }
+  .monument-head h1 { font-size:27px; }
+  .description, .symbol-text { font-size:17px; line-height:1.42; }
+  .gallery { aspect-ratio:4/3; height:auto; }
+  .audio-area { margin-top:22px; padding-top:12px; }
+  .bottom-tools { padding-top:15px; }
+}
+@media (max-width:560px) {
+  :root { --symbol-text-indent: 68px; /* 58px per icona + 10px */ }
+  .right-panel { padding:23px 18px 15px; }
+  .left-panel { padding:12px 16px 20px; }
+  .gallery { aspect-ratio:4/3; height:auto; }
+  .monument-head h1 { font-size:24px; }
+  .symbol-item { grid-template-columns:58px minmax(0,1fr); gap:10px; }
+  .symbol-icon { width:56px; height:56px; }
+  .symbol-text, .description { font-size:16px; }
+  .bottom-tools { gap:5px; padding-left:0; padding-right:0; }
+  .tool { min-width:70px; font-size:12px; }.tool img { width:31px; height:31px; }
+  .audio-area { gap:8px; }.audio-label { flex-basis:60px; font-size:12px; }.audio-label img { width:29px; height:28px; }
+}

@@ -1,0 +1,42 @@
+MEMORY TWIN — Scheda monumentale HTML · Versione 7 (16 ottobre 2026)
+
+NOVITÀ DELLA VERSIONE 7
+- La galleria occupa ora tutta la larghezza disponibile del blocco del
+  testo simbolico, da bordo sinistro a bordo destro. Anche il riquadro
+  interno della galleria riempie la cornice, senza margini a destra/in basso.
+  Il riquadro rimane in proporzione 4:3.
+- Il pulsante 3D è un vero pulsante HTML attivo e cliccabile.
+  Finché non è impostato un URL per il modello, si apre un messaggio chiaro
+  che segnala l'integrazione con il visualizzatore 3D di 3DVista ancora da fare.
+  Non è ancora un collegamento funzionante al popup 3D nativo del tour.
+- Conservati: Adobe Garamond Pro da Adobe Fonts, Cinzel Medium, le icone
+  originali grigio #575756, icona colonna bordeaux, testi integrali e
+  formattazione, lettore audio con simboli SVG, dati dinamici per monumento.
+
+COME PROVARE
+1. Estrai memory_twin_html_v7 e apri scheda.html.
+2. Controlla l'allineamento della galleria col testo simbolico sottostante.
+3. Premi 3D: compare una finestra informativa; la connessione vera a 3DVista
+   verrà verificata durante la fase di integrazione.
+4. Per visualizzare la versione senza selettore: ?id=DEMO-BC&embed=1.
+
+FONT
+- Adobe Garamond Pro: https://use.typekit.net/oew1wtx.css
+- Cinzel Medium 500 da Google Fonts.
+- Non caricare i file del font Adobe nel repository pubblico.
+
+DA COMPLETARE
+- Immagini della galleria, dati, bibliografia, ID definitivi.
+- Collegamento dal pulsante 3D al modello del tour o a un URL web approvato.
+- Pubblicazione del pacchetto su GitHub Pages; test Popup Web Frame 3DVista.
+
+STRUTTURA
+scheda.html, stile.css, scheda.js, monumenti.js, assets/.
+
+GESTIONE CONTENUTI
+- Per compilare i monumenti modifica soltanto monumenti.js.
+- Salva fotografie / tavole grafiche nella cartella immagini/ID-DEL-MONUMENTO/.
+- Non cambiare i nomi di scheda.html, stile.css, scheda.js e delle icone.
+- Le schede selezionano il monumento con ?id=ID-DEL-MONUMENTO.
+- Prima di pubblicare su GitHub verifica tutti i nomi file e le didascalie.
+- Per un esempio completo vedi GUIDA_CONTENUTI.txt.

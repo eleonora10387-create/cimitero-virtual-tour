@@ -1,0 +1,98 @@
+MEMORY TWIN — COME PREPARARE I CONTENUTI PER LE SCHEDE
+=======================================================
+
+IDEA FONDAMENTALE
+La grafica e le funzioni si trovano nei file scheda.html, stile.css,
+e scheda.js: SONO COMUNI A TUTTI I MONUMENTI e non vanno duplicati.
+Per aggiungere o modificare i monumenti si lavora su monumenti.js
+(e sulle cartelle delle fotografie).
+
+1) IDENTIFICATIVO UNIVOCO
+In monumenti.js ogni monumento è una voce del tipo:
+  "DEMO-BC": { id: "DEMO-BC", ... }
+Qui DEMO-BC è un codice solo di PROVA: sostituiscilo successivamente
+con il codice ufficiale del database monumenti. La chiave e l'id
+interno devono coincidere.
+
+2) DATI TESTUALI DI UNA SCHEDA
+- nome: denominazione del monumento;
+- cronologia: es. "1894; 1916";
+- autore: autore/progettista, se noto;
+- descrizione: un elenco di PARAGRAFI, senza numerazione;
+- simboli: uno o più elementi, ciascuno con nome, icona e testo;
+- bibliografia: un elenco di riferimenti bibliografici verificati;
+- dati: elenco di coppie etichetta/valore;
+- modello3dUrl: un indirizzo web SOLO se esiste un modello visualizzabile
+  tramite URL. Il popup 3D nativo di 3DVista NON È ANCORA COLLEGATO.
+
+Formattazione dei testi:
+  <strong>parola importante</strong> = grassetto
+  <em>titolo o citazione</em> = corsivo
+Mantieni tutti gli apostrofi e gli accenti originali. Il codice
+conserva il testo e la formattazione nella descrizione e nei simboli.
+
+3) IMMAGINI DELLA GALLERIA
+Raccogli i file originali, NON gli screenshot della scheda HTML.
+Crea una cartella per monumento, ad esempio:
+  immagini/DEMO-BC/disegno_1894.jpg
+  immagini/DEMO-BC/foto_esterna.jpg
+  immagini/DEMO-BC/dettaglio_colonna.jpg
+
+Si consigliano JPG di buona qualità per le fotografie e PNG per
+le tavole con linee/disegni che richiedono maggiore nitidezza.
+Non è necessario che tutte le immagini abbiano lo stesso formato:
+verranno mostrate per intero (senza taglio), all'interno della
+cornice 4:3; eventuali bande neutre sono intenzionali.
+
+Poi aggiungi i riferimenti in monumenti.js, sotto fotografie:
+  fotografie: [
+    {
+      src: "immagini/DEMO-BC/disegno_1894.jpg",
+      titolo: "Progetto storico",
+      didascalia: "Progetto dell'edicola, data e archivio da verificare"
+    },
+    {
+      src: "immagini/DEMO-BC/foto_esterna.jpg",
+      titolo: "Vista generale",
+      didascalia: "Edicola Bonfatti–Casini, vista d'insieme"
+    }
+  ],
+Questi titoli e didascalie sono solo ESEMPI: sostituire con
+crediti e informazioni documentarie autentiche.
+
+4) AUDIO
+Il campo audio.src può indicare un file ospitato online su GitHub
+Pages oppure, se copiato nella cartella del sito, un percorso
+relativo come "audio/DEMO-BC/narrazione.mp3".
+Attualmente Bonfatti–Casini fa riferimento al file audio.mp3
+esistente nel repository del tour.
+
+5) COME AGGIUNGERE UN SECONDO MONUMENTO
+- Copia la struttura della voce "DEMO-BC" in monumenti.js;
+- Cambia sia la chiave sia id con l'ID corretto;
+- Sostituisci nome, cronologia, autore, descrizione, simboli;
+- Inserisci le immagini nella cartella corrispondente e i relativi
+  percorsi sotto fotografie;
+- Non modificare scheda.html o stile.css.
+- Apri scheda.html?id=NUOVO-ID quando è pubblicato su GitHub Pages.
+
+6) PROVA PRIMA DI PUBBLICARE
+Apri scheda.html con il browser e usa il selettore in alto.
+Per nascondere il selettore, aggiungi ?id=DEMO-BC&embed=1.
+Attenzione: la visualizzazione locale non garantisce il funzionamento
+nel Popup Web Frame di 3DVista: quel collegamento va testato dopo
+la pubblicazione online.
+
+7) ORDINE SUGGERITO PER LA BONFATTI–CASINI
+A. Esporta le fotografie e i disegni ORIGINALI già usati nella galleria 3DVista.
+B. Assegna nomi di file chiari e numerati (01_, 02_, 03_...).
+C. Inviami la cartella o lo ZIP delle immagini: preparerò io l'elenco
+   fotografie con le relative didascalie senza farti editare il codice.
+D. Inseriamo bibliografia e dati scientifici SOLO quando i riferimenti
+   sono pronti e verificati.
+E. Pubblicazione su GitHub; prova nella Skin di 3DVista.
+
+FONT
+Adobe Garamond Pro viene richiamato da Adobe Fonts via
+https://use.typekit.net/oew1wtx.css (non caricare i file .otf/.ttf).
+Cinzel Medium viene richiamato da Google Fonts.
