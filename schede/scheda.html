@@ -45,6 +45,7 @@
 
     <section class="right-panel" aria-label="Descrizione del monumento">
       <header class="monument-head">
+        <p id="desktop-itinerary" class="desktop-itinerary" hidden></p>
         <h1 id="title"></h1>
         <p id="chronology" class="chronology"></p>
         <p id="author" class="author"></p>
@@ -63,6 +64,70 @@
           <audio id="audio-element" preload="metadata"></audio>
         </div>
       </div>
+    </section>
+  </main>
+
+
+  <!-- MOBILE: una presentazione alternativa degli stessi record in monumenti.js.
+       Non è un secondo file HTML e non contiene contenuti scientifici duplicati. -->
+  <main id="mobile-sheet" class="mobile-sheet" aria-label="Scheda monumentale per dispositivi mobili">
+    <header class="mobile-head">
+      <p id="mobile-itinerary" class="mobile-itinerary" hidden></p>
+      <h1 id="mobile-title"></h1>
+      <p id="mobile-chronology" class="mobile-chronology"></p>
+      <p id="mobile-author" class="mobile-author"></p>
+    </header>
+
+    <figure class="mobile-hero">
+      <div id="mobile-cover" class="mobile-cover"></div>
+      <figcaption id="mobile-cover-caption"></figcaption>
+    </figure>
+
+    <!-- Il lettore audio originale viene spostato qui quando lo schermo è stretto.
+         Così esiste UN SOLO player HTML e lo stato della riproduzione non si perde. -->
+    <section class="mobile-listen" aria-label="Ascolta la storia">
+      <h2>Ascolta la storia</h2>
+      <div id="mobile-audio-slot"></div>
+    </section>
+
+    <section class="mobile-sections" aria-label="Contenuti e approfondimenti">
+      <details class="mobile-disclosure" id="mobile-history">
+        <summary><span>Storia</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+        <div id="mobile-description" class="mobile-text mobile-details-body"></div>
+      </details>
+
+      <details class="mobile-disclosure mobile-symbol-disclosure" id="mobile-symbols">
+        <summary>
+          <span>Simboli e significati</span><span class="disclosure-mark" aria-hidden="true"></span>
+        </summary>
+        <div id="mobile-symbol-list" class="mobile-details-body mobile-symbol-list"></div>
+      </details>
+
+      <details class="mobile-disclosure" id="mobile-gallery-section">
+        <summary><span>Galleria</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+        <div class="mobile-details-body">
+          <div class="mobile-gallery">
+            <div id="mobile-gallery-view" class="mobile-gallery-view" aria-live="polite"></div>
+            <button type="button" class="gallery-arrow gallery-prev" id="mobile-photo-prev" aria-label="Immagine precedente">&#10094;</button>
+            <button type="button" class="gallery-arrow gallery-next" id="mobile-photo-next" aria-label="Immagine successiva">&#10095;</button>
+          </div>
+          <p id="mobile-gallery-caption" class="mobile-gallery-caption"></p>
+        </div>
+      </details>
+
+      <button type="button" id="mobile-tool-3d" class="mobile-direct-action" aria-label="Visualizza il modello 3D">
+        <span>Visualizza il modello 3D</span><span aria-hidden="true" class="direct-arrow">↗</span>
+      </button>
+
+      <details class="mobile-disclosure" id="mobile-bibliography">
+        <summary><span>Bibliografia</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+        <div id="mobile-bibliography-content" class="mobile-details-body"></div>
+      </details>
+
+      <details class="mobile-disclosure" id="mobile-data">
+        <summary><span>Dati e documentazione</span><span class="disclosure-mark" aria-hidden="true"></span></summary>
+        <div id="mobile-data-content" class="mobile-details-body"></div>
+      </details>
     </section>
   </main>
 

@@ -12,6 +12,9 @@ window.MONUMENTI = {
     nome: "Edicola Bonfatti–Casini",
     cronologia: "1894; 1916",
     autore: "Giuseppe Moroni", // Come visualizzato nella scheda 3DVista inviata; da confermare nel database
+    itinerari: [
+      { id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }
+    ],
     fotografie: [
       // Esempio da attivare quando avremo il file originale:
       // {src: "immagini/bonfatti-casini/disegno-storico.jpg", titolo: "Disegno storico", didascalia: "..."},
@@ -25,6 +28,7 @@ window.MONUMENTI = {
     ],
     simboli: [
       {
+        id: "SIM_COLONNA_SPEZZATA", // futuro collegamento al catalogo simboli condiviso
         nome: "Colonna spezzata",
         icona: "assets/colonna_spezzata.png",
         testo: [
@@ -46,6 +50,7 @@ window.MONUMENTI = {
     nome: "Cappella Ruspoli",
     cronologia: "",
     autore: "",
+    itinerari: [],
     fotografie: [],
     descrizione: [], // Nessun testo scientifico fornito: non inventare informazioni
     simboli: [],
