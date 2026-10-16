@@ -16,9 +16,18 @@ window.MONUMENTI = {
       { id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }
     ],
     fotografie: [
-      // Esempio da attivare quando avremo il file originale:
-      // {src: "immagini/bonfatti-casini/disegno-storico.jpg", titolo: "Disegno storico", didascalia: "..."},
+      { src: "immagini/DEMO-BC/disegno_storico.jpg", titolo: "Disegno di progetto: prospetti e pianta", didascalia: "Elaborato storico con prospetti e pianta dell’edicola; data e provenienza da verificare." },
+      { src: "immagini/DEMO-BC/vista_generale.jpg", titolo: "Edicola Bonfatti–Casini", didascalia: "Vista generale attuale dell’edicola e del suo coronamento neogotico." },
+      { src: "immagini/DEMO-BC/rosa_smargiassi.jpg", titolo: "Statua commemorativa", didascalia: "Particolare della figura commemorativa appoggiata alla colonna spezzata." },
+      { src: "immagini/DEMO-BC/colonna_spezzata.jpg", titolo: "La colonna spezzata e la ghirlanda", didascalia: "Dettaglio della colonna spezzata e degli elementi floreali." },
+      { src: "immagini/DEMO-BC/cripta.jpg", titolo: "Accesso alla cripta", didascalia: "Veduta dell’ambiente di accesso alla cripta familiare." },
+      { src: "immagini/DEMO-BC/prospetto_nord.jpg", titolo: "Rilievo: prospetto nord", didascalia: "Prospetto nord dell’edicola, come indicato sulla tavola." },
+      { src: "immagini/DEMO-BC/prospetto_ovest.jpg", titolo: "Rilievo: prospetto ovest", didascalia: "Prospetto ovest dell’edicola, come indicato sulla tavola." },
+      { src: "immagini/DEMO-BC/sezione.jpg", titolo: "Rilievo: sezione", didascalia: "Sezione architettonica del monumento e della parte sotterranea." },
+      { src: "immagini/DEMO-BC/pianta.jpg", titolo: "Rilievo: pianta", didascalia: "Pianta dell’edicola, come indicato sulla tavola." },
+      { src: "immagini/DEMO-BC/fotografia_storica.jpg", titolo: "Fotografia storica", didascalia: "Immagine storica presente nella documentazione raccolta; soggetto, data e provenienza da verificare." }
     ],
+    copertina: "immagini/DEMO-BC/vista_generale.jpg",
     descrizione: [
       `L’edicola fu commissionata da <strong>Menotti Casini</strong>, originario di Castiglione del Lago e protagonista di una significativa ascesa sociale: cresciuto in condizioni modeste e formatosi come ciabattino, si trasferì a Perugia, dove avviò una fortunata attività commerciale in via Mazzini e successivamente investì nel settore immobiliare. Nel <strong>1894</strong> ottenne dal Comune l’autorizzazione per la costruzione del monumento funerario; il complesso comprende anche una cripta sotterranea, documentata alla fine dell’Ottocento. Nel 1916 fu proposta una variante in forme neogotiche, comprendente anche un ampliamento laterale della cripta, mai realizzato.`,
       `Dopo la morte della moglie <strong>Rosa Smargiassi</strong>, nel 1922, al centro dell’edicola venne collocata la sua statua commemorativa, trasformando il monumento in un vero memoriale familiare. Il legame con i <strong>Bonfatti</strong> deriva dal matrimonio della figlia Elena Casini con Nazzareno Bonfatti; il doppio cognome fu inciso sul monumento soltanto nel <strong>2003</strong>, durante il restauro seguito ai danni provocati dal terremoto del 1997.`,
