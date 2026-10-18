@@ -57,8 +57,8 @@ window.MONUMENTI = {
   "DEMO-ANT": {
     id: "DEMO-ANT", // ID provvisorio: da sostituire con quello del database monumenti
     nome: "Cappella Antonini",
-    cronologia: "", // In attesa di conferma documentaria
-    autore: "", // In attesa di conferma documentaria
+    cronologia: "1862–1908 (fasi documentate)",
+    autore: "Francesco Antonini (attribuito), Romano Mignini, Rosa e Cecilia Moretti Caselli",
     itinerari: [
       { id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }
     ],
@@ -79,8 +79,24 @@ window.MONUMENTI = {
       { src: "immagini/DEMO-ANT/foto_15.jpg", titolo: "Disegno del soffitto cassettonato", didascalia: "Disegno del soffitto cassettonato, decorato con conchiglie e rosette. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." }
     ],
     copertina: "immagini/DEMO-ANT/foto_01.jpg",
-    descrizione: [], // Inserire solo testo storico-architettonico verificato
-    simboli: [], // Collegare gli elementi simbolici documentati
+    descrizione: [
+      `La Cappella Antonini si trova nel nucleo più antico del Cimitero Monumentale di Perugia, lungo il vialetto di destra, e custodisce la memoria di più generazioni della stessa famiglia. Vi riposano infatti Giuseppe Antonini, Teresa Belli e i loro discendenti, riuniti in un monumento ricco di arte. Un documento dell’Archivio del Cimitero del 1862 ricorda il trasferimento delle spoglie di Teresa e della piccola Irene Antonini, morta in tenerissima età, all’interno della sepoltura familiare. I documenti che attestano gli acquisti di terreno, gli ampliamenti e successive sistemazioni testimoniano quanta cura i familiari abbiano riservato nel tempo a questo luogo, del quale fu a lungo protagonista l’ingegner Francesco Antonini.`,
+      `A Francesco, membro della famiglia, è attribuito anche il progetto della cappella. L’edificio interpreta il gusto eclettico dell’Ottocento attraverso diversi richiami all’architettura romanica e bizantina, riconoscibili negli archi, nella compattezza dei volumi, nella ricchezza dell’ornato. La pietra chiara e la rigorosa simmetria conferiscono al prospetto un carattere solenne. Il portale ad arco è incorniciato da fasce concentriche scolpite con sculture floreali e tralci vegetali; il cancello metallico e la grata della lunetta, composti da un fitto disegno, sono un’articolata opera di artigianato. In alto, la scritta ‘Antonini’, racchiusa da un motivo a treccia, afferma l’identità familiare. Sui fianchi, ampie croci in rilievo occupano gli archi ciechi, mentre nastri, ghirlande ed emblemi decorano la parte soprastante. All’esterno, quattro bracieri ornamentali accompagnano la cappella sui quattro lati del marciapiede che circonda il monumento. Ciascuno presenta un corpo a vaso, arricchito da decorazioni a rilievo e sormontato da una fiamma scolpita. La loro presenza introduce il tema della luce, che ritorna all’interno dello spazio interno nella lampada sostenuta dall’angelo della vetrata.`,
+      `Il raccolto ambiente interno è rivestito di marmo bianco; le pareti laterali accolgono le sepolture della famiglia che, assieme alle iscrizioni, sono accompagnate da ritratti finemente scolpiti che emergono da fondi lasciati più scabri. Tra questi, posto su un piedistallo in pietra scura, spicca il busto firmato da <strong>Romano Mignini e datato 1893</strong>, probabilmente raffigurante Giacomo Antonini, scomparso l’anno precedente. Sopra questo insieme si distende un soffitto ligneo a cassettoni, ornato da conchiglie e rosette, dal quale pende un lampadario in ferro battuto di gusto neogotico.`,
+      `La luce filtra nella cappella grazie a una bifora, impreziosita da una sottile colonna marmorea con capitello a foglie d’acanto. Qui si trova la vetrata realizzata nel <strong>1934 da Rosa e Cecilia Moretti-Caselli</strong>, protagoniste della tradizione perugina della pittura a fuoco su vetro. Due angeli occupano le aperture: quello di sinistra, raffigurato di profilo, sostiene una lampada accesa; quello di destra, rivolto verso l’osservatore, regge un cartiglio con un’iscrizione latina. Vesti aranciate e verdi, ali purpuree e rosse, motivi geometrici e fogliami compongono una trama luminosa, completata da piccoli volti alati nella parte superiore e dagli emblemi familiari, posti alla base. I vetri colorati creano sulle pareti di marmo bianco dei suggestivi giochi di luce variopinta.`,
+      `I simboli cristiani accompagnano lo sguardo fin dall’ingresso. <strong>Alfa e Omega</strong>, prima e ultima lettera dell’alfabeto greco, richiamano Dio come principio e compimento di ogni cosa. Il <strong>monogramma di Cristo</strong>, posto sopra il portale, intreccia invece le lettere greche <em>chi</em> e <em>rho</em>, iniziali del suo nome. Insieme alle croci dei prospetti, questi segni esprimono la fede nella salvezza e nella resurrezione. Anche le <strong>conchiglie</strong> del soffitto appartengono a un repertorio che, nella tradizione cristiana e funeraria, evoca la rinascita e la resurrezione.`,
+      `Un ulteriore richiamo all’identità della famiglia è affidato all’emblema ripetuto sui fianchi e nelle vetrate, nel quale compaiono una <strong>barca</strong> sul mare, una fascia dorata e una <strong>stella</strong>. La barca e l’astro si prestano anche a una lettura legata al viaggio dell’esistenza e alla ricerca di una guida. È un’interpretazione evocativa, da distinguere dall’origine araldica dello stemma, che, ad oggi, rimane da chiarire.`
+    ],
+    simboli: [
+      {
+        id: "SIM_BRACIERE_FIAMMA",
+        nome: "Il braciere e la fiamma",
+        icona: "assets/braciere.png",
+        testo: [
+          `Nei bracieri della Cappella Antonini, la <strong>fiamma</strong> si innalza dal recipiente con un movimento che la scultura rende permanente. Nel linguaggio funerario, il fuoco raccoglie significati legati alla vita e alla purificazione; nella tradizione cristiana può richiamare anche la presenza dello Spirito Santo. Nel contesto della cappella, questa fiamma che continua idealmente ad ardere può essere letta come un’immagine della speranza nella vita eterna e della continuità del ricordo. La lucerna, raffigurata nella vetrata, richiama l’illuminazione divina e il legame fra la dimensione terrena e l’aldilà. Fra esterno e interno, la luce assume così forme diverse e accompagna il passaggio dalla memoria dei defunti alla speranza cristiana della resurrezione.`
+        ]
+      }
+    ],
     audio: { src: "audio/Antonini_audio.mp3" }, // Narrazione Cappella Antonini; file nel repository schede/audio/
     bibliografia: [],
     dati: [],
