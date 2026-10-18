@@ -1,6 +1,6 @@
 /*
  * ARCHIVIO MONUMENTI – Memory Twin del Cimitero Monumentale di Perugia
- * Versione di prova, 16 ottobre 2026.
+ * Archivio aggiornato con galleria Antonini, 18 ottobre 2026.
  * Gli ID DEMO-... sono PROVVISORI: da sostituire con l'ID del database.
  * Mantenere gli stessi campi per ogni nuovo monumento.
  * Per le immagini, usare percorsi relativi: "immagini/nome-file.jpg".
@@ -53,6 +53,38 @@ window.MONUMENTI = {
     bibliografia: [], // Da riempire senza inventare citazioni
     dati: [], // Collegamento alla struttura scientifica in fase successiva
     modello3dUrl: "modelli/bonfatti-casini-web.glb" // Copia web ottimizzata; originale conservato separatamente
+  },
+  "DEMO-ANT": {
+    id: "DEMO-ANT", // ID provvisorio: da sostituire con quello del database monumenti
+    nome: "Cappella Antonini",
+    cronologia: "", // In attesa di conferma documentaria
+    autore: "", // In attesa di conferma documentaria
+    itinerari: [
+      { id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }
+    ],
+    fotografie: [
+      { src: "immagini/DEMO-ANT/foto_01.jpg", titolo: "La Cappella Antonini nel viale laterale destro", didascalia: "La Cappella Antonini nel viale laterale destro. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-ANT/foto_02.jpg", titolo: "Vista aerea del nucleo antico del cimitero", didascalia: "Vista aerea del nucleo antico del cimitero con la Cappella Antonini. Fotografia: Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_03.jpg", titolo: "Dettaglio del cancello", didascalia: "Dettaglio del cancello. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-ANT/foto_04.jpg", titolo: "Dettaglio di uno dei quattro bracieri", didascalia: "Dettaglio di uno dei quattro bracieri. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-ANT/foto_05.jpg", titolo: "Piante della Cappella Antonini", didascalia: "Piante della Cappella Antonini. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_06.jpg", titolo: "Prospetto sud", didascalia: "Prospetto sud. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_07.jpg", titolo: "Prospetto nord", didascalia: "Prospetto nord. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_08.jpg", titolo: "Prospetto est", didascalia: "Prospetto est. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_09.jpg", titolo: "Sezioni", didascalia: "Sezioni. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_10.jpg", titolo: "Sezioni", didascalia: "Sezioni. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_11.jpg", titolo: "La vetrata dello studio Moretti Caselli", didascalia: "La vetrata dello studio Moretti Caselli. Elaborazione: Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_12.jpg", titolo: "Disegni preparatori della vetrata", didascalia: "I disegni preparatori della vetrata della Cappella Antonini dello studio Moretti Caselli. Fotografie: Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_14.jpg", titolo: "Disegno e fotografie di alcune sepolture", didascalia: "Disegno e fotografie di alcune sepolture della Cappella Antonini. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." },
+      { src: "immagini/DEMO-ANT/foto_15.jpg", titolo: "Disegno del soffitto cassettonato", didascalia: "Disegno del soffitto cassettonato, decorato con conchiglie e rosette. Gabriele Cavalletti, Elena Fiavoni, Maria Giulia Mollari." }
+    ],
+    copertina: "immagini/DEMO-ANT/foto_01.jpg",
+    descrizione: [], // Inserire solo testo storico-architettonico verificato
+    simboli: [], // Collegare gli elementi simbolici documentati
+    audio: { src: "" }, // Narrazione non ancora disponibile
+    bibliografia: [],
+    dati: [],
+    modello3dUrl: "modelli/antonini-web.glb"
   },
   "DEMO-RUS": {
     id: "DEMO-RUS",
