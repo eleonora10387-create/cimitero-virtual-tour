@@ -81,7 +81,7 @@ window.MONUMENTI = {
     copertina: "immagini/DEMO-ANT/foto_01.jpg",
     descrizione: [], // Inserire solo testo storico-architettonico verificato
     simboli: [], // Collegare gli elementi simbolici documentati
-    audio: { src: "" }, // Narrazione non ancora disponibile
+    audio: { src: "audio/Antonini_audio.mp3" }, // Narrazione Cappella Antonini; file nel repository schede/audio/
     bibliografia: [],
     dati: [],
     modello3dUrl: "modelli/antonini-web.glb"
