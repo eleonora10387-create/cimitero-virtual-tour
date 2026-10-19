@@ -103,17 +103,55 @@ window.MONUMENTI = {
     modello3dUrl: "modelli/antonini-web.glb"
   },
   "DEMO-RUS": {
-    id: "DEMO-RUS",
+    id: "DEMO-RUS", // Da collegare all'ID definitivo del database
     nome: "Cappella Ruspoli",
-    cronologia: "",
-    autore: "",
-    itinerari: [],
-    fotografie: [],
-    descrizione: [], // Nessun testo scientifico fornito: non inventare informazioni
-    simboli: [],
-    audio: { src: "" },
+    cronologia: "1930",
+    autore: "Francesco Cirone",
+    itinerari: [
+      { id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }
+    ],
+    fotografie: [
+      { src: "immagini/DEMO-RUS/foto_01.jpg", titolo: "Vista generale della Cappella Ruspoli", didascalia: "Vista generale della Cappella Ruspoli. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-RUS/foto_02.jpg", titolo: "Dettaglio del pianerottolo di ingresso della cappella", didascalia: "Dettaglio del pianerottolo di ingresso della cappella. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-RUS/foto_03.jpg", titolo: "Dettaglio dello stemma della famiglia Ruspoli", didascalia: "Dettaglio dello stemma della famiglia Ruspoli. Fotografia: Eleonora Dottorini." },
+      { src: "immagini/DEMO-RUS/foto_04.jpg", titolo: "Dettaglio dell’inferriata lavorata a forma di vite e grappoli", didascalia: "Dettaglio dell’inferriata lavorata a forma di vite e grappoli." },
+      { src: "immagini/DEMO-RUS/foto_05.jpg", titolo: "Piante della Cappella Ruspoli", didascalia: "Piante della Cappella Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_06.jpg", titolo: "Il prospetto principale", didascalia: "Il prospetto principale. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_07.jpg", titolo: "Sezione", didascalia: "Sezione. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_08.jpg", titolo: "Disegni della grata decorata e del soffitto cassettonato", didascalia: "Disegni della grata decorata e del soffitto cassettonato. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_09.jpg", titolo: "I sarcofagi di Emanuele e Camillo Ruspoli", didascalia: "I sarcofagi di Emanuele e Camillo Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_10.jpg", titolo: "Lo stemma della famiglia Ruspoli", didascalia: "Lo stemma della famiglia Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." }
+    ],
+    copertina: "immagini/DEMO-RUS/foto_01.jpg",
+    descrizione: [
+      `La cappella dei principi Ruspoli di Candriano sorge lungo il viale principale del Cimitero Monumentale di Perugia. La sua costruzione è legata alla morte di Emanuele, figlio di Camillo Ruspoli e Margherita Blanc, scomparso nell’agosto 1929 a ventitré anni. Nel settembre successivo Camillo avviò le pratiche per un sepolcreto privato nella proprietà di Santa Petronilla. Nonostante le autorizzazioni ottenute, la scelta ricadde poi sul cimitero civico, per ragioni ancora non chiarite.`,
+      `Il progetto per la nuova sede fu presentato dall’<strong>architetto Francesco Cirone</strong>. Nel gennaio <strong>1930</strong> il Comune incaricò l’architetto Pietro Angelini e il pittore Alberto Iraci di un sopralluogo per valutarne l’inserimento tra i monumenti circostanti. Le difficoltà nella sistemazione del terreno e le trattative sui costi della concessione portarono la questione all’attenzione del Ministero dell’Interno; in febbraio il prefetto sollecitò il Comune a risolvere gli ostacoli. Il 26 febbraio 1930 la Commissione edilizia approvò progetto e collocazione, chiedendo di valutare una riduzione delle dimensioni e una maggiore armonia tra la parte superiore e quella inferiore dell’edificio.`,
+      `Nel settembre 1931 fu autorizzata una fascia di terreno attorno alla cappella, destinata ai fiori: un dettaglio della cura riservata allo spazio del ricordo. Restano ignoti gli autori delle decorazioni e degli arredi. Un inventario del 1965 ricorda candelabri in ferro battuto e legno scolpito, lanternoni, un inginocchiatoio, immagini sacre e un dipinto dello <em>Sposalizio della Madonna</em>, e ci restituisce l’immagine di un ambiente dedicato alla preghiera e alle celebrazioni familiari.`,
+      `<strong>La famiglia Ruspoli</strong>`,
+      `Di origine fiorentina, documentata già nel Duecento, la famiglia Ruspoli trasferì nel Cinquecento un proprio ramo a Roma, consolidandovi la sua posizione attraverso attività economiche, incarichi e alleanze matrimoniali. L’unione con i Marescotti ne legò le vicende al castello di Vignanello. Nel 1709 Clemente XI conferì a Francesco Maria Marescotti Ruspoli il titolo di principe di Cerveteri, riconoscendone il prestigio nell’aristocrazia pontificia.`,
+      `Nell’Ottocento, parte della famiglia aderì alla causa nazionale. Bartolomeo Ruspoli lasciò il servizio militare pontificio per combattere nella prima guerra d’indipendenza assieme all’esercito piemontese. Suo figlio Emanuele (1837–1899), principe di Poggio Suasa dal 1886 e legato anche all’Umbria attraverso l’elezione nel collegio di Foligno, proseguì questo impegno: deputato, senatore e per due mandati sindaco di Roma, partecipò alla trasformazione della città nella capitale italiana.`,
+      `Dal matrimonio con Laura Caracciolo nacque Camillo (1882–1949), principe di Candriano e committente della cappella. Sposato con Margherita Blanc e proprietario della villa di Santa Petronilla, scelse Perugia come luogo della memoria familiare. Trascorse parte della propria vita a Cuba, dove era giunto nel 1920 per una missione commerciale del governo italiano e aveva acquistato alcune proprietà agricole. Morì all’Avana nel 1949 e, nel 1955, sua moglie Margherita curò le pratiche per riportarne la salma a Perugia e tumularla accanto al figlio Emanuele.`,
+      `<strong>L’architettura e le decorazioni</strong>`,
+      `La cappella si distingue per l’imponenza dei volumi, l’equilibrio della composizione e il sobrio ed elegante apparato decorativo. Il linguaggio eclettico rielabora il modello delle chiese rinascimentali a pianta centrale: al corpo inferiore, con quattro prospetti dal profilo a capanna, si sovrappone un tamburo ottagonale in cui si aprono quattro oculi. La copertura a padiglione, rivestita di metallo verde, culmina in un vaso fiammeggiante.`,
+      `Il caldo colore del laterizio contrasta con la pietra chiara del basamento, delle cornici e delle colonnine agli spigoli della facciata. Una breve scalinata, affiancata da due vasi decorati, conduce al portale a tutto sesto, incorniciato da un archivolto scolpito. Sopra l’ingresso risalta lo stemma policromo dei Ruspoli, coronato e circondato da una ghirlanda di frutti e nastri. Il piccolo campanile, con tre arcate sostenute da colonnine, altrettante campane e una croce latina sommitale, accentua il richiamo all’architettura di una chiesa.`,
+      `Il laterizio caratterizza anche lo spazio interno, accompagnato da un rivestimento marmoreo che definisce la parte inferiore delle pareti. La luce degli oculi e della grande finestra semicircolare opposta all’ingresso illumina il marmo chiaro dei monumenti funerari. Al centro si trova il sarcofago rettangolare di Emanuele, ornato da cornici finemente scolpite, medaglioni e intrecci vegetali: sul fronte compare una croce latina, sui lati lo stemma familiare. Lungo la parete sinistra è collocato il sepolcro di Camillo: un’urna dal profilo curvo, sostenuta da un piedistallo e ornata da volute, motivi vegetali e una croce a otto punte.`,
+      `Alzando lo sguardo, si osserva il ricercato lavoro del laterizio: negli angoli, sequenze di archi progressivamente arretrati raccordano il corpo inferiore al tamburo ottagonale. Il soffitto ligneo conclude lo spazio con una composizione geometrica nella quale motivi a croce si dispongono a raggiera intorno al centro.`,
+      `Ai lati del sarcofago centrale, due grate metalliche nel pavimento, ciascuna divisa in tre riquadri, intrecciano rosoni, losanghe e motivi vegetali in una trama simile a un merletto.`
+    ],
+    simboli: [
+      {
+        id: "SIM_VITE",
+        nome: "La vite",
+        icona: "assets/vite.png",
+        testo: [
+          `Nella tradizione cristiana, la vite richiama Cristo, che nel Vangelo si definisce «vera vite», e il legame spirituale che unisce a lui i fedeli. I tralci e i grappoli rimandano al vino eucaristico e al sangue del sacrificio di Cristo, evocando la promessa di salvezza e di vita eterna. Nell’arte funeraria, la vite assume anche significati legati alla vitalità, alla rinascita e alla continuità degli affetti. I tralci che si intrecciano possono così richiamare la persistenza dei legami umani oltre la morte, esprimendo, accanto alla speranza cristiana della resurrezione, la fedeltà del ricordo. Nella Cappella Ruspoli, il motivo della vite assume inoltre una valenza identitaria: presente nell'inferriata della lunetta d'ingresso, richiama anche l'emblema araldico della famiglia, caratterizzato da tralci intrecciati e grappoli d'uva. Al significato cristiano della pianta si affianca così il riferimento alla memoria e all'appartenenza familiare.`
+        ]
+      }
+    ],
+    audio: { src: "audio/Ruspoli_audio.mp3" },
     bibliografia: [],
     dati: [],
-    modello3dUrl: ""
+    modello3dUrl: "modelli/ruspoli-web.glb"
   }
+
 };
