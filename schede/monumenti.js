@@ -116,24 +116,27 @@ window.MONUMENTI = {
       { src: "immagini/DEMO-RUS/foto_03.jpg", titolo: "Dettaglio dello stemma della famiglia Ruspoli", didascalia: "Dettaglio dello stemma della famiglia Ruspoli. Fotografia: Eleonora Dottorini." },
       { src: "immagini/DEMO-RUS/foto_04.jpg", titolo: "Dettaglio dell’inferriata lavorata a forma di vite e grappoli", didascalia: "Dettaglio dell’inferriata lavorata a forma di vite e grappoli." },
       { src: "immagini/DEMO-RUS/foto_05.jpg", titolo: "Piante della Cappella Ruspoli", didascalia: "Piante della Cappella Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
-      { src: "immagini/DEMO-RUS/foto_06.jpg", titolo: "Prospetto Nord", didascalia: "Prospetto Nord. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
+      { src: "immagini/DEMO-RUS/foto_06.jpg", titolo: "Il prospetto principale", didascalia: "Il prospetto principale. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
       { src: "immagini/DEMO-RUS/foto_07.jpg", titolo: "Sezione", didascalia: "Sezione. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
       { src: "immagini/DEMO-RUS/foto_08.jpg", titolo: "Disegni della grata decorata e del soffitto cassettonato", didascalia: "Disegni della grata decorata e del soffitto cassettonato. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
       { src: "immagini/DEMO-RUS/foto_09.jpg", titolo: "I sarcofagi di Emanuele e Camillo Ruspoli", didascalia: "I sarcofagi di Emanuele e Camillo Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." },
       { src: "immagini/DEMO-RUS/foto_10.jpg", titolo: "Lo stemma della famiglia Ruspoli", didascalia: "Lo stemma della famiglia Ruspoli. Elaborazione: Nicolò Cecchini, Valentina Gaggiotti, Michelle Pucci." }
     ],
     copertina: "immagini/DEMO-RUS/foto_01.jpg",
-
     descrizione: [
-      `La famiglia Ruspoli è una delle più antiche e nobili casate italiane d’origine fiorentina, documentata fin dal Duecento. Il ramo principale discende da Francesco Maria Marescotti Ruspoli (1672–1731), al quale nel 1709 Clemente XI conferì il titolo di principe di Cerveteri e conte di Vignanello, riconoscendone il prestigio nell’aristocrazia pontificia.`,
-      `Nel 1721 papa Benedetto XIII confermò a Francesco Ruspoli (1752–1829), nipote di Francesco Maria Marescotti Ruspoli, il titolo di Principe Romano di Cerveteri, trasmissibile ai suoi discendenti in perpetuo. Questo riconoscimento segnò l’ingresso ufficiale della famiglia Ruspoli nell’alta aristocrazia pontificia. Parallelamente si sviluppò il ramo dei principi di Poggio Suasa, fondato da Bartolomeo Ruspoli (1796/1800–1872), figura di rilievo del Risorgimento e colonnello dell’esercito piemontese.`,
-      `Il figlio di Bartolomeo, Emanuele Francesco Maria Ruspoli (1837–1899), ingegnere, principe di Poggio Suasa dal 1886 e legato anche all’Umbria attraverso l’elezione nel collegio di Foligno, proseguì l’impegno politico paterno: fu deputato, senatore e per due mandati sindaco di Roma, partecipando attivamente alla trasformazione della città nella capitale italiana. Dal suo matrimonio con Laura Caracciolo nacque nel 1882 Camillo Ruspoli, principe di Candriano, committente della cappella.`,
-      `Nel settembre del 1929, a seguito della prematura scomparsa del figlio Emanuele, morto solo un mese prima all’età di ventitré anni, Camillo Ruspoli avviò le pratiche per costruire un sepolcreto privato nella proprietà di Santa Petronilla; nonostante le autorizzazioni ottenute, la scelta ricadde poi sul cimitero civico. Il progetto per la cappella, presentato dall’<strong>architetto Francesco Cirone</strong>, fu approvato il <strong>26 febbraio 1930</strong>.`,
+      `La cappella dei principi Ruspoli di Candriano sorge lungo il viale principale del Cimitero Monumentale di Perugia. La sua costruzione è legata alla morte di Emanuele, figlio di Camillo Ruspoli e Margherita Blanc, scomparso nell’agosto 1929 a ventitré anni. Nel settembre successivo Camillo avviò le pratiche per un sepolcreto privato nella proprietà di Santa Petronilla. Nonostante le autorizzazioni ottenute, la scelta ricadde poi sul cimitero civico, per ragioni ancora non chiarite.`,
+      `Il progetto per la nuova sede fu presentato dall’<strong>architetto Francesco Cirone</strong>. Nel gennaio <strong>1930</strong> il Comune incaricò l’architetto Pietro Angelini e il pittore Alberto Iraci di un sopralluogo per valutarne l’inserimento tra i monumenti circostanti. Le difficoltà nella sistemazione del terreno e le trattative sui costi della concessione portarono la questione all’attenzione del Ministero dell’Interno; in febbraio il prefetto sollecitò il Comune a risolvere gli ostacoli. Il 26 febbraio 1930 la Commissione edilizia approvò progetto e collocazione, chiedendo di valutare una riduzione delle dimensioni e una maggiore armonia tra la parte superiore e quella inferiore dell’edificio.`,
+      `Nel settembre 1931 fu autorizzata una fascia di terreno attorno alla cappella, destinata ai fiori: un dettaglio della cura riservata allo spazio del ricordo. Restano ignoti gli autori delle decorazioni e degli arredi. Un inventario del 1965 ricorda candelabri in ferro battuto e legno scolpito, lanternoni, un inginocchiatoio, immagini sacre e un dipinto dello <em>Sposalizio della Madonna</em>, e ci restituisce l’immagine di un ambiente dedicato alla preghiera e alle celebrazioni familiari.`,
+      `<strong>La famiglia Ruspoli</strong>`,
+      `Di origine fiorentina, documentata già nel Duecento, la famiglia Ruspoli trasferì nel Cinquecento un proprio ramo a Roma, consolidandovi la sua posizione attraverso attività economiche, incarichi e alleanze matrimoniali. L’unione con i Marescotti ne legò le vicende al castello di Vignanello. Nel 1709 Clemente XI conferì a Francesco Maria Marescotti Ruspoli il titolo di principe di Cerveteri, riconoscendone il prestigio nell’aristocrazia pontificia.`,
+      `Nell’Ottocento, parte della famiglia aderì alla causa nazionale. Bartolomeo Ruspoli lasciò il servizio militare pontificio per combattere nella prima guerra d’indipendenza assieme all’esercito piemontese. Suo figlio Emanuele (1837–1899), principe di Poggio Suasa dal 1886 e legato anche all’Umbria attraverso l’elezione nel collegio di Foligno, proseguì questo impegno: deputato, senatore e per due mandati sindaco di Roma, partecipò alla trasformazione della città nella capitale italiana.`,
+      `Dal matrimonio con Laura Caracciolo nacque Camillo (1882–1949), principe di Candriano e committente della cappella. Sposato con Margherita Blanc e proprietario della villa di Santa Petronilla, scelse Perugia come luogo della memoria familiare. Trascorse parte della propria vita a Cuba, dove era giunto nel 1920 per una missione commerciale del governo italiano e aveva acquistato alcune proprietà agricole. Morì all’Avana nel 1949 e, nel 1955, sua moglie Margherita curò le pratiche per riportarne la salma a Perugia e tumularla accanto al figlio Emanuele.`,
       `<strong>L’architettura e le decorazioni</strong>`,
       `La cappella si distingue per l’imponenza dei volumi, l’equilibrio della composizione e il sobrio ed elegante apparato decorativo. Il linguaggio eclettico rielabora il modello delle chiese rinascimentali a pianta centrale: al corpo inferiore, con quattro prospetti dal profilo a capanna, si sovrappone un tamburo ottagonale in cui si aprono quattro oculi. La copertura a padiglione, rivestita di metallo verde, culmina in un vaso fiammeggiante.`,
       `Il caldo colore del laterizio contrasta con la pietra chiara del basamento, delle cornici e delle colonnine agli spigoli della facciata. Una breve scalinata, affiancata da due vasi decorati, conduce al portale a tutto sesto, incorniciato da un archivolto scolpito. Sopra l’ingresso risalta lo stemma policromo dei Ruspoli, coronato e circondato da una ghirlanda di frutti e nastri. Il piccolo campanile, con tre arcate sostenute da colonnine, altrettante campane e una croce latina sommitale, accentua il richiamo all’architettura di una chiesa.`,
       `Il laterizio caratterizza anche lo spazio interno, accompagnato da un rivestimento marmoreo che definisce la parte inferiore delle pareti. La luce degli oculi e della grande finestra semicircolare opposta all’ingresso illumina il marmo chiaro dei monumenti funerari. Al centro si trova il sarcofago rettangolare di Emanuele, ornato da cornici finemente scolpite, medaglioni e intrecci vegetali: sul fronte compare una croce latina, sui lati lo stemma familiare. Lungo la parete sinistra è collocato il sepolcro di Camillo: un’urna dal profilo curvo, sostenuta da un piedistallo e ornata da volute, motivi vegetali e una croce a otto punte.`,
-      `Alzando lo sguardo, si osserva il ricercato lavoro del laterizio: negli angoli, sequenze di archi progressivamente arretrati raccordano il corpo inferiore al tamburo ottagonale. Il soffitto ligneo conclude lo spazio con una composizione geometrica nella quale motivi a croce si dispongono a raggiera intorno al centro. Ai lati del sarcofago centrale, due grate metalliche nel pavimento, ciascuna divisa in tre riquadri, intrecciano rosoni, losanghe e motivi vegetali in una trama simile a un merletto.`
+      `Alzando lo sguardo, si osserva il ricercato lavoro del laterizio: negli angoli, sequenze di archi progressivamente arretrati raccordano il corpo inferiore al tamburo ottagonale. Il soffitto ligneo conclude lo spazio con una composizione geometrica nella quale motivi a croce si dispongono a raggiera intorno al centro.`,
+      `Ai lati del sarcofago centrale, due grate metalliche nel pavimento, ciascuna divisa in tre riquadri, intrecciano rosoni, losanghe e motivi vegetali in una trama simile a un merletto.`
     ],
     simboli: [
       {
@@ -141,9 +144,7 @@ window.MONUMENTI = {
         nome: "La vite",
         icona: "assets/vite.png",
         testo: [
-          `La vite è uno dei motivi dominanti della facciata principale: tralci intrecciati e grappoli d’uva ricorrono nello stemma di famiglia e nell’inferriata della lunetta d’ingresso. Il motivo vegetale unisce così il richiamo all’identità e alla memoria familiare ai significati cristiani e funerari della pianta.`,
-          `Nella tradizione cristiana, la vite richiama Cristo, che è la «vera vite», il legame spirituale che unisce a lui i fedeli, che sono i tralci, nonché il vino eucaristico, evocando così la promessa di salvezza e di vita eterna.`,
-          `Nell’arte funeraria, la vite assume anche significati legati alla vitalità, alla rinascita e alla continuità degli affetti. I tralci che si intrecciano possono così richiamare la persistenza dei legami umani oltre la morte, esprimendo, accanto alla speranza cristiana della resurrezione, la fedeltà del ricordo.`
+          `Nella tradizione cristiana, la vite richiama Cristo, che nel Vangelo si definisce «vera vite», e il legame spirituale che unisce a lui i fedeli. I tralci e i grappoli rimandano al vino eucaristico e al sangue del sacrificio di Cristo, evocando la promessa di salvezza e di vita eterna. Nell’arte funeraria, la vite assume anche significati legati alla vitalità, alla rinascita e alla continuità degli affetti. I tralci che si intrecciano possono così richiamare la persistenza dei legami umani oltre la morte, esprimendo, accanto alla speranza cristiana della resurrezione, la fedeltà del ricordo. Nella Cappella Ruspoli, il motivo della vite assume inoltre una valenza identitaria: presente nell'inferriata della lunetta d'ingresso, richiama anche l'emblema araldico della famiglia, caratterizzato da tralci intrecciati e grappoli d'uva. Al significato cristiano della pianta si affianca così il riferimento alla memoria e all'appartenenza familiare.`
         ]
       }
     ],
@@ -151,6 +152,82 @@ window.MONUMENTI = {
     bibliografia: [],
     dati: [],
     modello3dUrl: "modelli/ruspoli-web.glb"
+  },
+  "DEMO-FP": {
+    id: "DEMO-FP",
+    nome: "Edicola Fiorini–Pacioselli",
+    cronologia: "1908",
+    autore: "Romano e Venusto Mignini",
+    itinerari: [{ id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }],
+    fotografie: [
+      {src: "immagini/DEMO-FP/foto_01.jpg", titolo: "Vista generale dell’Edicola Fiorini–Pacioselli", didascalia: "Vista generale dell’Edicola Fiorini–Pacioselli. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_02.jpg", titolo: "Dettaglio di uno dei due leoni", didascalia: "Dettaglio di uno dei due leoni. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_03.jpg", titolo: "Dettaglio del capitello", didascalia: "Dettaglio del capitello. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_04.jpg", titolo: "Dettaglio della fascia decorativa del portale", didascalia: "Dettaglio della fascia decorativa del portale. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_05.jpg", titolo: "Modello in creta dell’Edicola Fiorini–Pacioselli", didascalia: "Modello in creta dell’Edicola Fiorini–Pacioselli firmato dall’autore Romano Mignini. Archivio di Stato di Perugia."},
+      {src: "immagini/DEMO-FP/foto_06.jpg", titolo: "Pianta dell’Edicola Fiorini–Pacioselli", didascalia: "Pianta dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."},
+      {src: "immagini/DEMO-FP/foto_07.jpg", titolo: "Prospetto dell’Edicola Fiorini–Pacioselli", didascalia: "Prospetto dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."},
+      {src: "immagini/DEMO-FP/foto_08.jpg", titolo: "Sezione dell’Edicola Fiorini–Pacioselli", didascalia: "Sezione dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."}
+    ],
+    copertina: "immagini/DEMO-FP/foto_01.jpg",
+    descrizione: [
+      "Realizzata nel 1908, su progetto dei noti scultori perugini <strong>Romano e Venusto Mignini</strong> su commissione di <strong>Giuseppe Conestabile della Staffa</strong>, nel gennaio 1955 l’edicola viene ceduta ai Signori Fiorini Natale e Pacioselli Vincenzo.",
+      "Di impronta neogotica, l’edicola si sviluppa all’interno di una delle arcate a sesto acuto della galleria monumentale sinistra, con un ricco apparato architettonico e scultoreo impostato su due fasce basamentali sovrapposte. In primo piano, sopra un imponente basamento ornato da modanature e motivi floreali, sono disposti due grandi <strong>leoni in pietra bianca</strong>, raffigurati distesi, con la bocca semiaperta e lo sguardo rivolto verso la scala centrale. Alle loro spalle si innalzano due colonne in marmo bianco e rossastro, coronate da capitelli con foglie in altorilievo e da abachi modanati, ornati da dentelli di derivazione classica.",
+      "Sul fondo dell’arcata, al termine della scalinata, si apre il portale di accesso alla cappella, chiuso da un cancello in ferro battuto con decorazioni geometriche. Ai lati si dispongono due semicolonne ornate da motivi a rombo e due ordini di paraste, dei quali quello più interno e arretrato presenta decorazioni con <strong>tralci di vite e grappoli d’uva</strong>.",
+      "Il fregio superiore riprende lateralmente i motivi vegetali dei capitelli, mentre al centro, sopra il portale, uno spazio privo di decorazioni accoglie l’epigrafe con i nomi delle due famiglie intestatarie dell’edicola.",
+      "La composizione culmina in un pregevole <strong>altorilievo raffigurante la Madonna con il Bambino</strong>, collocato al centro dell’arcata e incorniciato da motivi a rombo e da una fascia esterna decorata con tralci di vite e grappoli d’uva, in continuità con l’ornato delle paraste sottostanti."
+    ],
+    simboli: [{
+      id: "SIM_LEONE",
+      nome: "Il leone",
+      icona: "assets/leone.png",
+      testo: ["Presente nell’arte funeraria fin dall’antichità, il leone è simbolo di forza, vigilanza e protezione. Spesso raffigurato in coppia presso ingressi e sepolture, assume il ruolo di custode del riposo dei defunti. Nella tradizione cristiana richiama inoltre Cristo e la resurrezione: secondo un’antica credenza tramandata dai bestiari medievali, i cuccioli nascevano privi di vita e venivano risvegliati al terzo giorno dal soffio del padre, evocando la resurrezione di Cristo. Gli stessi bestiari attribuivano al leone la capacità di dormire con gli occhi aperti, facendone un emblema di vigilanza incessante. Nell’Edicola Fiorini–Pacioselli, i due leoni distesi ai lati della scalinata richiamano così la custodia e la protezione simbolica della sepoltura."]
+    }],
+    audio: { src: "audio/Fiorini-Pacioselli_Audio.mp3" },
+    bibliografia: [],
+    dati: [],
+    modello3dUrl: "modelli/fiorini-pacioselli-web.glb"
+  },
+  "DEMO-PAG": {
+    id: "DEMO-PAG", // ID provvisorio: da sostituire con l'identificativo del database
+    nome: "Cappella Pagnotta",
+    cronologia: "1915",
+    autore: "Giuseppe Frenguelli, Bruto Mosci",
+    itinerari: [{ id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }],
+    fotografie: [
+      { src: "immagini/DEMO-PAG/foto_01.jpg", titolo: "Vista generale della Cappella Pagnotta", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_02.jpg", titolo: "Lunetta e rilievo figurato sopra l’ingresso", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_03.jpg", titolo: "Sculture dei bambini presso la cappella", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_04.jpg", titolo: "Medaglione decorativo", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_05.jpg", titolo: "Particolare del rilievo floreale", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_06.jpg", titolo: "Disegno architettonico della facciata", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_07.jpg", titolo: "Piante della cappella", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_08.jpg", titolo: "Prospetto principale", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_09.jpg", titolo: "Prospetti laterali", didascalia: "Didascalia e crediti in preparazione." },
+      { src: "immagini/DEMO-PAG/foto_10.jpg", titolo: "Prospetto e sezione", didascalia: "Didascalia e crediti in preparazione." }
+    ],
+    copertina: "immagini/DEMO-PAG/foto_01.jpg",
+    descrizione: [
+      `La cappella, situata lungo il viale principale, sul lato sinistro, fu costruita nel <strong>1915</strong> su commissione di <strong>Armando Piergiovanni</strong> (1872-1952), che ne affidò la progettazione all’artista <strong>Giuseppe Frenguelli</strong>. Nel 1941 la proprietà venne ceduta alla famiglia Pagnotta, che nel 1946 e nel 1947 eseguì lavori di manutenzione straordinaria e realizzò una cordonatura in travertino lungo il perimetro del lotto.`,
+      `Di dimensioni contenute e dalle forme sobrie, la cappella presenta una pianta rettangolare, con l’ingresso sul lato lungo rivolto a sud. È realizzata in travertino, la cui superficie è movimentata, in corrispondenza dei quattro spigoli, dalla lavorazione dei blocchi a bocciarda e a scalpello.`,
+      `La facciata è scandita in tre fasce verticali e protetta da una pensilina sostenuta da quattro peducci. Al centro, la porta in ferro è sormontata da una lunetta semicircolare con il rilievo di una figura femminile dallo sguardo rivolto al cielo; due anfore scolpite ornano le fasce laterali. Tra i motivi decorativi compare il volto di Medusa, ricorrente anche in altre cappelle disegnate da Frenguelli. La pensilina riserva un ulteriore dettaglio da scoprire: osservandola dal basso, si distinguono i delicati bassorilievi che ne decorano la superficie inferiore.`,
+      `A richiamare l’attenzione sono soprattutto le due sculture di bambini davanti all’ingresso, che danno al monumento il suo carattere più riconoscibile. Le figure, raccolte in un atteggiamento assorto, raffigurano i figli di Armando Piergiovanni: Giulio Augusto, morto di difterite nel 1915, scolpito da Giuseppe Frenguelli, e Aida, opera dell’artista perugino <strong>Bruto Mosci</strong>. La grazia delle pose conferisce alle due presenze una delicata intimità, invitando a soffermarsi sulla memoria familiare custodita dalla cappella.`,
+      `L’interno è raccolto e semplice. Il pavimento è formato da due lastre di pietra bianca, mentre la controfacciata è intonacata e tinteggiata di bianco. Sulle altre tre pareti, lastre di marmo grigio chiaro inquadrano i cinque ordini di colombari laterali e i cinque loculi della parete di fondo, chiusi da lastre di marmo bianco con venature grigie. Una volta a botte copre l’ambiente; lungo il suo attacco alle pareti corre una cornice in stucco bianco, ornata da motivi floreali.`
+    ],
+    simboli: [{
+      id: "SIM_PAPAVERO",
+      nome: "Il papavero",
+      icona: "assets/papavero.png",
+      testo: [
+      `Nella scultura funeraria, il papavero è un simbolo del sonno eterno. Questo significato affonda le radici nell’antichità ed è legato alle proprietà soporifere del papavero da oppio, associato a Ipno, dio del sonno, e a Morfeo, dio dei sogni.`,
+      `Sui monumenti sepolcrali la pianta compare sia in fiore sia attraverso le sue capsule, i frutti tondeggianti che racchiudono i semi. La sua presenza può assumere un valore consolatorio: la morte è evocata come un dolce abbandono al sonno, un riposo che libera dagli affanni della vita.`,
+      `Nella cappella Pagnotta, il motivo floreale è raccolto entro un medaglione circolare: corolle e foglie stilizzate si alternano in una composizione a raggiera, trasformando le forme della pianta in un delicato ornamento geometrico.`
+      ]
+    }],
+    audio: { src: "audio/Pagnotta_Audio.mp3" },
+    bibliografia: [],
+    dati: [],
+    modello3dUrl: "modelli/pagnotta-web.glb"
   }
 
 };
