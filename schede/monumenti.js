@@ -152,6 +152,41 @@ window.MONUMENTI = {
     bibliografia: [],
     dati: [],
     modello3dUrl: "modelli/ruspoli-web.glb"
+  },
+  "DEMO-FP": {
+    id: "DEMO-FP",
+    nome: "Edicola Fiorini–Pacioselli",
+    cronologia: "1908",
+    autore: "Romano e Venusto Mignini",
+    itinerari: [{ id: "simboli", etichetta: "Itinerario dei simboli", colore: "#8e284b" }],
+    fotografie: [
+      {src: "immagini/DEMO-FP/foto_01.jpg", titolo: "Vista generale dell’Edicola Fiorini–Pacioselli", didascalia: "Vista generale dell’Edicola Fiorini–Pacioselli. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_02.jpg", titolo: "Dettaglio di uno dei due leoni", didascalia: "Dettaglio di uno dei due leoni. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_03.jpg", titolo: "Dettaglio del capitello", didascalia: "Dettaglio del capitello. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_04.jpg", titolo: "Dettaglio della fascia decorativa del portale", didascalia: "Dettaglio della fascia decorativa del portale. Fotografia: Eleonora Dottorini."},
+      {src: "immagini/DEMO-FP/foto_05.jpg", titolo: "Modello in creta dell’Edicola Fiorini–Pacioselli", didascalia: "Modello in creta dell’Edicola Fiorini–Pacioselli firmato dall’autore Romano Mignini. Archivio di Stato di Perugia."},
+      {src: "immagini/DEMO-FP/foto_06.jpg", titolo: "Pianta dell’Edicola Fiorini–Pacioselli", didascalia: "Pianta dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."},
+      {src: "immagini/DEMO-FP/foto_07.jpg", titolo: "Prospetto dell’Edicola Fiorini–Pacioselli", didascalia: "Prospetto dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."},
+      {src: "immagini/DEMO-FP/foto_08.jpg", titolo: "Sezione dell’Edicola Fiorini–Pacioselli", didascalia: "Sezione dell’Edicola Fiorini–Pacioselli. Elaborazione: Niccolò Carotenuto, Andrea Massarelli, Alessio Rosini."}
+    ],
+    copertina: "immagini/DEMO-FP/foto_01.jpg",
+    descrizione: [
+      "Realizzata nel 1908, su progetto dei noti scultori perugini <strong>Romano e Venusto Mignini</strong> su commissione di <strong>Giuseppe Conestabile della Staffa</strong>, nel gennaio 1955 l’edicola viene ceduta ai Signori Fiorini Natale e Pacioselli Vincenzo.",
+      "Di impronta neogotica, l’edicola si sviluppa all’interno di una delle arcate a sesto acuto della galleria monumentale sinistra, con un ricco apparato architettonico e scultoreo impostato su due fasce basamentali sovrapposte. In primo piano, sopra un imponente basamento ornato da modanature e motivi floreali, sono disposti due grandi <strong>leoni in pietra bianca</strong>, raffigurati distesi, con la bocca semiaperta e lo sguardo rivolto verso la scala centrale. Alle loro spalle si innalzano due colonne in marmo bianco e rossastro, coronate da capitelli con foglie in altorilievo e da abachi modanati, ornati da dentelli di derivazione classica.",
+      "Sul fondo dell’arcata, al termine della scalinata, si apre il portale di accesso alla cappella, chiuso da un cancello in ferro battuto con decorazioni geometriche. Ai lati si dispongono due semicolonne ornate da motivi a rombo e due ordini di paraste, dei quali quello più interno e arretrato presenta decorazioni con <strong>tralci di vite e grappoli d’uva</strong>.",
+      "Il fregio superiore riprende lateralmente i motivi vegetali dei capitelli, mentre al centro, sopra il portale, uno spazio privo di decorazioni accoglie l’epigrafe con i nomi delle due famiglie intestatarie dell’edicola.",
+      "La composizione culmina in un pregevole <strong>altorilievo raffigurante la Madonna con il Bambino</strong>, collocato al centro dell’arcata e incorniciato da motivi a rombo e da una fascia esterna decorata con tralci di vite e grappoli d’uva, in continuità con l’ornato delle paraste sottostanti."
+    ],
+    simboli: [{
+      id: "SIM_LEONE",
+      nome: "Il leone",
+      icona: "assets/leone.png",
+      testo: ["Presente nell’arte funeraria fin dall’antichità, il leone è simbolo di forza, vigilanza e protezione. Spesso raffigurato in coppia presso ingressi e sepolture, assume il ruolo di custode del riposo dei defunti. Nella tradizione cristiana richiama inoltre Cristo e la resurrezione: secondo un’antica credenza tramandata dai bestiari medievali, i cuccioli nascevano privi di vita e venivano risvegliati al terzo giorno dal soffio del padre, evocando la resurrezione di Cristo. Gli stessi bestiari attribuivano al leone la capacità di dormire con gli occhi aperti, facendone un emblema di vigilanza incessante. Nell’Edicola Fiorini–Pacioselli, i due leoni distesi ai lati della scalinata richiamano così la custodia e la protezione simbolica della sepoltura."]
+    }],
+    audio: { src: "audio/Fiorini-Pacioselli_Audio.mp3" },
+    bibliografia: [],
+    dati: [],
+    modello3dUrl: "modelli/fiorini-pacioselli-web.glb"
   }
 
 };
