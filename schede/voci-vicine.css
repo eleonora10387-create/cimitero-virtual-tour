@@ -1,0 +1,111 @@
+/* Variante Voci Vicine della grafica originale: stile.css e' caricato prima.
+   Colore tematico e disposizione dei contenuti sono le uniche differenze
+   rispetto alle schede monumentali. */
+:root { --wine:#307143; --paper:#ffffff; --ink:#535353; --icon:#575756;
+  --font-body:"adobe-garamond-pro","Adobe Garamond Pro",Garamond,Georgia,serif;
+  --font-title:"Cinzel",Georgia,serif; }
+* {box-sizing:border-box;}
+html { scroll-behavior:smooth; }
+body.voci-body {background:#fff; margin:0; color:var(--ink); font-family:var(--font-body);}
+button,input {font:inherit;}
+button {cursor:pointer;}
+/* La stessa griglia percentuale delle schede monumentali: 47 / 53 */
+.vv-sheet {display:grid; grid-template-columns:47% 53%; align-items:stretch;
+  width:min(1600px,calc(100% - 30px)); min-height:min(930px,calc(100vh - 30px));
+  margin:15px auto; background:#fff; box-shadow:0 5px 20px rgba(30,30,30,.10);}
+.vv-sheet .vv-left {display:flex; flex-direction:column; align-items:stretch;
+  padding:32px 30px 22px 45px; min-width:0;}
+.vv-sheet .vv-right {display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:35px 45px 35px 18px; min-width:0;}
+.vv-header {flex:none;}
+.vv-itinerary {color:#307143 !important; display:flex; align-items:center; gap:10px; text-transform:uppercase;
+  font:500 12px/1.35 var(--font-title); letter-spacing:.06em; margin:0 0 14px;}
+.vv-itinerary::before {content:""; width:3px; height:28px; background:#307143 !important;
+  border-radius:2px; flex:none;}
+.vv-header h1 {color:#686868; font:500 clamp(24px,2.05vw,33px)/1.16 var(--font-title);
+  font-variant:small-caps; margin:0 0 7px; letter-spacing:.01em;}
+.vv-header .chronology {font:clamp(17px,1.3vw,23px)/1.2 var(--font-body); margin:0 0 18px;}
+.vv-poem {color:#535353; font:clamp(16px,1.2vw,19px)/1.37 var(--font-body);
+  letter-spacing:.005em; text-align:left; white-space:pre-wrap; overflow-wrap:break-word;}
+.vv-source {font:italic clamp(13px,1vw,15px)/1.35 var(--font-body);
+  color:#777; border-top:1px solid #e8e5e3; margin:19px 0 10px; padding-top:12px;}
+.vv-audio-slot {margin-top:auto;}
+.vv-audio-area {margin:0; padding:10px 0 1px; display:flex; align-items:center; gap:18px;}
+/* Lettore audio identico (SVG play/pause, -10s, barra, timer). */
+.vv-audio-area .audio-label {display:flex; flex-direction:column; align-items:center; gap:4px; flex:0 0 72px;
+  font:500 15px var(--font-title); text-transform:uppercase; color:#575756;}
+.vv-audio-area .audio-label img {width:39px; height:36px; object-fit:contain;}
+.vv-audio-area .audio-player {display:grid; grid-template-columns:auto auto minmax(70px,1fr);
+  grid-template-rows:1fr auto; align-items:center; gap:0 10px; width:100%; padding-top:7px;}
+.vv-audio-area .audio-toggle,.vv-audio-area .audio-back {background:none; border:0; color:#575756; line-height:1; padding:2px;}
+.vv-audio-area .audio-toggle {width:30px; height:30px; display:inline-flex; align-items:center; justify-content:center;}
+.vv-audio-area .audio-toggle svg {width:24px; height:24px; fill:currentColor; display:block;}
+.vv-audio-area .audio-toggle .icon-pause {display:none;}
+.vv-audio-area .audio-toggle.is-playing .icon-pause {display:block;}
+.vv-audio-area .audio-toggle.is-playing .icon-play {display:none;}
+.vv-audio-area .audio-back {white-space:nowrap; font-size:18px;}
+.vv-audio-area .audio-back span {font-size:11px;}
+.vv-audio-area input[type=range] {accent-color:#575756; min-width:0; cursor:pointer; height:16px;}
+.vv-audio-area .audio-clock {grid-column:3; color:#aaa; justify-self:end; font-size:13px; padding-top:2px;}
+.vv-gallery {width:100%; flex:0 1 auto; position:relative; display:flex; align-items:center;
+  justify-content:center; min-height:400px; max-height:min(760px,calc(100vh - 145px));}
+.vv-photo {display:flex; align-items:center; justify-content:center; width:100%; height:100%;}
+.vv-photo img {display:block; max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain;}
+.vv-sheet .vv-gallery .gallery-arrow {position:absolute; top:50%; transform:translateY(-50%);
+  border:0; background:rgba(255,255,255,.86); color:#9c9c9c; padding:8px 12px;
+  font:27px/1 var(--font-body);}
+.vv-gallery .gallery-prev {left:0;} .vv-gallery .gallery-next {right:0;}
+.vv-gallery .gallery-arrow[hidden],.vv-mobile-hero-gallery .gallery-arrow[hidden] {display:none;}
+.vv-caption {color:#777; font-style:italic; text-align:center;
+  font-size:13px; margin:7px 0 0; min-height:18px;}
+.vv-mobile-sheet {display:none;}
+body.embedded .vv-sheet {width:100%; min-height:100vh; margin:0; box-shadow:none;}
+@media (max-width:940px) {
+  .vv-sheet {display:none!important;}
+  body.voci-body {background:#fff;}
+  .vv-mobile-sheet {display:block; width:100%; max-width:700px; min-height:100vh;
+    margin:0 auto; padding:24px clamp(16px,4vw,32px) 46px; background:#fff;}
+  .vv-mobile-sheet .mobile-head {margin:0 0 17px;}
+  .vv-mobile-sheet .mobile-head h1 {color:#686868; font:500 clamp(22px,5.2vw,29px)/1.16 var(--font-title);
+     letter-spacing:.006em; font-variant:small-caps; margin:3px 0 7px;}
+  .vv-mobile-sheet .mobile-itinerary {font-size:11px; margin:0 0 12px;}
+  .vv-mobile-sheet .mobile-itinerary::before {height:24px;}
+  .vv-mobile-sheet .mobile-chronology {font-size:19px; margin:0 0 2px;}
+  .vv-mobile-sheet .mobile-hero {margin:0 0 18px;}
+  .vv-mobile-sheet .mobile-cover {display:flex; align-items:center; justify-content:center;
+    width:100%; aspect-ratio:4/3; overflow:hidden; background:#fff; border:1px solid #e9e6e4;}
+  .vv-mobile-sheet .mobile-cover img {display:block; width:100%; height:100%; object-fit:contain;}
+  .vv-mobile-sheet .mobile-hero figcaption {font:italic 13px var(--font-body); color:#777; text-align:center; padding-top:5px;}
+  .vv-mobile-sheet .mobile-listen {border-top:1px solid #e8e5e3; border-bottom:1px solid #e8e5e3;
+    padding:11px 0 14px; margin-bottom:7px;}
+  .vv-mobile-sheet .mobile-listen h2 {font:500 18px var(--font-title); font-variant:small-caps;
+    color:#575756; margin:0 0 6px;}
+  .vv-mobile-sheet .vv-audio-area {align-items:flex-start; width:100%; gap:8px; padding:0;}
+  .vv-mobile-sheet .vv-audio-area .audio-label {height:35px; justify-content:center; flex:0 0 36px;}
+  .vv-mobile-sheet .vv-audio-area .audio-label span {display:none;}
+  .vv-mobile-sheet .vv-audio-area .audio-label img {width:28px; height:28px;}
+  .vv-mobile-sheet .vv-audio-area .audio-player {grid-template-columns:32px 40px minmax(45px,1fr);
+    grid-template-rows:35px 18px; align-items:center; column-gap:5px; padding-top:0;}
+  .vv-mobile-sheet .vv-audio-area .audio-toggle {height:35px; width:32px;}
+  .vv-mobile-sheet .vv-audio-area .audio-back {height:35px; font-size:16px;}
+  .vv-mobile-sheet .vv-audio-area .audio-clock {font-size:12px; padding:0;}
+  .vv-mobile-sheet .vv-audio-area input[type=range] {min-height:26px;}
+  /* Le immagini si sfogliano direttamente nella fotografia iniziale. */
+  .vv-mobile-hero-gallery {position:relative; width:100%;}
+  .vv-mobile-hero-gallery .gallery-arrow {position:absolute; top:50%; transform:translateY(-50%);
+    min-width:44px; min-height:44px; border:0; background:rgba(255,255,255,.86);
+    color:#999; font-size:27px; line-height:1;}
+  .vv-mobile-hero-gallery .gallery-prev {left:0;}
+  .vv-mobile-hero-gallery .gallery-next {right:0;}
+  /* Poesia e fonte sono immediatamente leggibili, come nella vista desktop. */
+  .vv-mobile-reading {padding:19px 2px 4px;}
+  .vv-mobile-reading .vv-mobile-poem {white-space:pre-wrap; font-size:18px;
+    line-height:1.46; text-align:left; padding:0;}
+  .vv-mobile-reading .vv-mobile-source {border-top:1px solid #e8e5e3; padding-top:12px;
+    margin:17px 0 0; font:italic 15px/1.35 var(--font-body); color:#777;}
+  body.embedded .vv-mobile-sheet {max-width:none; min-height:100%; margin:0;}
+}
+@media (max-width:370px) {
+  .vv-mobile-sheet {padding:17px 13px 36px;}
+  .vv-mobile-reading .vv-mobile-poem {font-size:17px;}
+}
