@@ -109,3 +109,7 @@ body.embedded .vv-sheet {width:100%; min-height:100vh; margin:0; box-shadow:none
   .vv-mobile-sheet {padding:17px 13px 36px;}
   .vv-mobile-reading .vv-mobile-poem {font-size:17px;}
 }
+
+/* Voci Vicine · crediti fotografici, separati dalle didascalie essenziali. */
+.vv-photo-credit { color:#888; font:italic 12px/1.3 var(--font-body); text-align:center; margin:2px 0 0; }
+.vv-mobile-photo-credit { color:#888; font:italic 12px/1.3 var(--font-body); text-align:center; margin:2px 0 0; }

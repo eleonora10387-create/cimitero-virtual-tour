@@ -29,6 +29,7 @@
     setPhoto($('vv-photo'), photo);
     setPhoto($('vv-mobile-cover'), photo);
     $('vv-caption').textContent = $('vv-mobile-cover-caption').textContent = photo?.didascalia || '';
+    $('vv-photo-credit').textContent = $('vv-mobile-photo-credit').textContent = voice.creditiFotografici || '';
     const hasMany = photos.length > 1;
     ['vv-prev', 'vv-next', 'vv-mobile-prev', 'vv-mobile-next'].forEach(name => { $(name).hidden = !hasMany; });
   }
