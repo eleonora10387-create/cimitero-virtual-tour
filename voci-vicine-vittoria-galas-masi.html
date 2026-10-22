@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it" data-voice-id="DEMO-VITTORIA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Vittoria Galas Masi · Voci Vicine · Cimitero Monumentale di Perugia</title>
+  <meta name="description" content="Vittoria Galas Masi (1818–1898): poesia di Giuseppe Vinti, fotografie e lettura audio nell’itinerario Voci Vicine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://use.typekit.net">
+  <link rel="stylesheet" href="https://use.typekit.net/oew1wtx.css">
+  <!-- Riprende il foglio di stile REALE delle schede monumentali. -->
+  <link rel="stylesheet" href="stile.css">
+  <!-- Solo le variazioni necessarie all’itinerario Voci Vicine. -->
+  <link rel="stylesheet" href="voci-vicine.css">
+</head>
+<body class="voci-body">
+  <!-- DESKTOP: stessa griglia 47/53 delle schede, ma poesia a sinistra e foto a destra. -->
+  <main id="sheet" class="sheet vv-sheet" aria-label="Scheda Voci Vicine">
+    <section class="left-panel vv-left" aria-label="Poesia e fonte">
+      <header class="monument-head vv-header">
+        <p class="desktop-itinerary itinerary-badge vv-itinerary">Voci Vicine</p>
+        <h1 id="vv-title"></h1>
+        <p id="vv-chronology" class="chronology"></p>
+      </header>
+      <div id="vv-poem" class="vv-poem"></div>
+      <p id="vv-source" class="vv-source"></p>
+      <div id="vv-audio-slot-desktop" class="vv-audio-slot">
+        <!-- Questo è il lettore delle schede originali, spostato sul mobile senza duplicarlo. -->
+        <div id="audio-area" class="audio-area vv-audio-area">
+          <div class="audio-label"><img src="assets/logo_audio.png" alt=""><span>Ascolta</span></div>
+          <div class="audio-player">
+            <button id="audio-toggle" type="button" class="audio-toggle" aria-label="Avvia narrazione" aria-pressed="false">
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 4.5 20 12 7.5 19.5Z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="5.5" y="4.5" width="4.5" height="15" rx=".5"/><rect x="14" y="4.5" width="4.5" height="15" rx=".5"/></svg>
+            </button>
+            <button id="audio-back" type="button" class="audio-back" aria-label="Indietro di dieci secondi">↶ <span>10</span></button>
+            <input id="audio-progress" type="range" min="0" max="1000" value="0" aria-label="Posizione audio">
+            <div class="audio-clock"><span id="audio-current">0:00</span> / <span id="audio-duration">—:——</span></div>
+            <audio id="audio-element" preload="metadata"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="right-panel vv-right" aria-label="Fotografie">
+      <div class="vv-gallery" aria-label="Galleria fotografica">
+        <div id="vv-photo" class="vv-photo" aria-live="polite"></div>
+        <button type="button" id="vv-prev" class="gallery-arrow gallery-prev" aria-label="Fotografia precedente">&#10094;</button>
+        <button type="button" id="vv-next" class="gallery-arrow gallery-next" aria-label="Fotografia successiva">&#10095;</button>
+      </div>
+      <p id="vv-caption" class="gallery-caption vv-caption"></p>
+      <p id="vv-photo-credit" class="vv-photo-credit"></p>
+    </section>
+  </main>
+
+  <!-- MOBILE: stessa logica a sezioni espandibili delle schede Antonini/Ruspoli. -->
+  <main id="mobile-sheet" class="mobile-sheet vv-mobile-sheet" aria-label="Voci Vicine per dispositivi mobili">
+    <header class="mobile-head">
+      <p class="mobile-itinerary itinerary-badge vv-itinerary">Voci Vicine</p>
+      <h1 id="vv-mobile-title"></h1>
+      <p id="vv-mobile-chronology" class="mobile-chronology"></p>
+    </header>
+    <figure class="mobile-hero">
+      <div class="vv-mobile-hero-gallery" aria-label="Galleria fotografica">
+        <div id="vv-mobile-cover" class="mobile-cover" aria-live="polite"></div>
+        <button type="button" id="vv-mobile-prev" class="gallery-arrow gallery-prev" aria-label="Fotografia precedente">&#10094;</button>
+        <button type="button" id="vv-mobile-next" class="gallery-arrow gallery-next" aria-label="Fotografia successiva">&#10095;</button>
+      </div>
+      <figcaption id="vv-mobile-cover-caption"></figcaption>
+      <p id="vv-mobile-photo-credit" class="vv-mobile-photo-credit"></p>
+    </figure>
+    <section class="mobile-listen" aria-label="Ascolta la poesia">
+      <h2>Ascolta la poesia</h2>
+      <div id="vv-audio-slot-mobile"></div>
+    </section>
+    <!-- Anche su mobile: poesia e fonte sempre visibili, senza pannelli a tendina. -->
+    <section class="vv-mobile-reading" aria-label="Poesia e riferimento bibliografico">
+      <div id="vv-mobile-poem" class="mobile-details-body vv-mobile-poem"></div>
+      <p id="vv-mobile-source" class="vv-mobile-source"></p>
+    </section>
+  </main>
+  <script src="voci-vicine-dati.js"></script>
+  <script src="voci-vicine.js"></script>
+</body>
+</html>
