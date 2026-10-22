@@ -84,5 +84,56 @@ window.VOCI_VICINE = {
       "audio": {
           "src": "audio/Gaspard-Y-Berg_Audio.mp3"
       }
+  },
+  "DEMO-VITTORIA": {
+    "id": "DEMO-VITTORIA",
+    "nome": "Vittoria Galas Masi",
+    "cronologia": "1818–1898",
+    "itinerario": {
+      "id": "voci-vicine",
+      "etichetta": "Voci Vicine",
+      "colore": "#307143"
+    },
+    "poesia": "Se tu alzi lo sguardo verso il cielo,\npotrai vedere quello che vedo,\nse tu guardi le stelle\npotrai capire quello che sono,\nse tu mi pensi potrai cogliere la mia presenza\nse tu chiudi gli occhi\npotrai sentire le mie carezze\nportate dal vento\nche culla la mia sedia vuota.",
+    "fonte": "Vinti, G. (2017). Voci vicine. Ali&No.",
+    "creditiFotografici": "Fotografie: Eleonora Dottorini.",
+    "fotografie": [
+      {
+        "src": "immagini/DEMO-VITTORIA/foto_01.jpg",
+        "titolo": "Sepoltura di Vittoria Galas Masi",
+        "didascalia": "Sepoltura di Vittoria Galas Masi"
+      }
+    ],
+    "audio": {
+      "src": "audio/Vittoria-Galas-Masi_Audio.mp3"
+    }
+  },
+  "DEMO-BONAZZI": {
+    "id": "DEMO-BONAZZI",
+    "nome": "Luigi Bonazzi",
+    "cronologia": "1811–1879",
+    "itinerario": {
+      "id": "voci-vicine",
+      "etichetta": "Voci Vicine",
+      "colore": "#307143"
+    },
+    "poesia": "«Parrebbe che nei primordi del mondo\nquesta nostra regione fosse tutta coperta dal mare».\nSon passati tanti anni da quando mi accinsi\na scrivere la storia di Perugia.\nLa città etrusca, l’augusta perusia romana,\nla battaglia del Trasimeno\nil tempo correva\nmi sfuggiva dalle mani\nsi disperdeva.\nTante stagioni passate\na calcare le scene\na recitar la Pia dei Tolomei o la figlia dell’Appennino.\nL’assedio di Totila, la fondazione di San Pietro,\nl’anno mille…\ne io a dividere i miei giorni\nfra la docenza\ne lo scrivere di notte\nalla luce delle candele\nche illuminavano i fogli e la mia candida barba.\nIl cardinale Albornoz, l’abate di Monmaggiore,\nl’assassinio di Biordo Michelotti\nquesti tragici fatti uscivano\ndalla penna sfilando fra le pagine\ne centinaia di date si affollavano.\nIl comune mi dispensò dall’insegnamento\naffinché tutte le mie rimanenti energie\npotessero essere riservate alla grande opera.\nBraccio Fortebraccio, Pietro Perugino,\nle nozze di sangue dei Baglioni\nVecchio ma non domo,\navevo ancora forza per il teatro\nrecitando con i miei allievi del Concordia.\nLa prima pietra della Fortezza Paolina\nil colonnello Alfani,\nla Repubblica Cisalpina di Napoleone,\nLupatelli e i fratelli Bandiera...\nSentivo giorno dopo giorno\navvicinarsi la fine\naffrettavo la stampa del secondo e ultimo volume,\nma non potei vedere le facce di quelli\nche alla lettura delle ultime pagine\nsi sentirono offesi\ndalla mia penna aguzza.",
+    "fonte": "Vinti, G. (2017). Voci vicine. Ali&No, pp. 85–86.",
+    "creditiFotografici": "Fotografie: Eleonora Dottorini.",
+    "fotografie": [
+      {
+        "src": "immagini/DEMO-BONAZZI/foto_01.jpg",
+        "titolo": "Sepoltura di Luigi Bonazzi, vista generale",
+        "didascalia": "Sepoltura di Luigi Bonazzi"
+      },
+      {
+        "src": "immagini/DEMO-BONAZZI/foto_02.jpg",
+        "titolo": "Sepoltura di Luigi Bonazzi, dettaglio della lapide",
+        "didascalia": "Sepoltura di Luigi Bonazzi"
+      }
+    ],
+    "audio": {
+      "src": "audio/Luigi-Bonazzi_Audio.mp3"
+    }
   }
 };
